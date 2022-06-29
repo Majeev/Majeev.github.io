@@ -1,0 +1,26 @@
+
+
+.nav_container {
+    position: fixed;
+    background: var(--main-gradient);
+    width: 300px;
+    height: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav_icon{
+    transform: translateY(8%);
+    font-size: 3rem;
+    cursor: pointer;
+    background: none;
+    transition: all .5s;
+}
+.nav_container a:hover{
+    color: var(--main-color);
+}

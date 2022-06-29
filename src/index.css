@@ -5,4 +5,22 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  list-style: none;
+}
+body {
+  background-color: #f4f5f7;
+}
+html{
+  font-size: 62.5%;
+}
+
+:root{
+  --main-gradient: linear-gradient(67deg, rgba(249,179,141,1) 0%, rgba(247,183,175,1) 57%, rgba(222,100,115,1) 100%);
+  --main-color: white;
+}
+
+.container_large{
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
