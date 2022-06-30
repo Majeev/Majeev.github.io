@@ -1,27 +1,26 @@
-
-
 .nav_container {
-    position: fixed;
-    background: var(--main-gradient);
-    width: 300px;
-    height: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 5%;
-    border-radius: 30px;
-    display: flex;
-    justify-content: space-evenly;
     align-items: center;
+    background: var(--main-gradient);
+    border-radius: 30px;
+    bottom: 5%;
+    display: flex;
+    height: 60px;
+    justify-content: space-evenly;
+    left: 50%;
+    position: fixed;
+    transform: translateX(-50%);
+    width: 300px;
     z-index: 100;
 }
 
-.nav_icon{
-    transform: translateY(8%);
-    font-size: 3rem;
-    cursor: pointer;
+.nav_icon {
     background: none;
+    cursor: pointer;
+    font-size: 3rem;
+    transform: translateY(8%);
     transition: all .5s;
 }
-.nav_container a:hover{
+
+.nav_container a:hover {
     color: var(--main-color);
 }

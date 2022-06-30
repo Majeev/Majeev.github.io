@@ -11,7 +11,7 @@ const Header = () => {
                         <div className={css.welcomeHero}>
                             <img src={hero} className={css.hero}/>
                             <div className={css.welcome_description}>
-                                <h3>Hi! I am Jakub,</h3>
+                                <h1>Hi! I am Jakub,</h1>
                                 <p> Front end Developer you are looking for!</p>
                                 <div className={css.contactMe}>Contact Me!</div>
                             </div>
