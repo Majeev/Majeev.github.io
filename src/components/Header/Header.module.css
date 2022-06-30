@@ -25,7 +25,7 @@
     overflow: hidden;
 }
 
-.welcomeHero {
+.welcome_hero {
     display: flex;
     height: 100%;
     width: 100%;
@@ -35,8 +35,8 @@
 }
 
 .hero {
-    width: 200px;
-    height: 200px;
+    width: 30%;
+    height: auto;
     transform: translateY(15%);
 }
 
@@ -125,7 +125,7 @@
     }
     50% {
         opacity: 50%;
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
     100% {
         transform: scale(1);
@@ -150,9 +150,7 @@
     .welcome, .welcome_photo{
         width: 100%;
     }
-    /*.welcomeHero{*/
-    /*    height: 80%;*/
-    /*}*/
+
     .welcome {
         height: 60%;
     }
@@ -170,7 +168,39 @@
         /*margin: 2rem 0 0.5rem 0;*/
     }
     .hero {
-        width: 250px;
-        height: 250px;
+        width: 25%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .main_container {
+        height: 80%;
+    }
+    .welcome {
+        height: 50%;
+    }
+    .welcome_photo {
+        height: 50%;
+    }
+    .hero {
+        display: none;
+    }
+
+    .welcome_description {
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contactMe {
+        position: relative;
+       width: 90%;
+    }
+    .welcome_traits {
+        font-size: 1.5vh;
+        padding-top: 0;
     }
 }

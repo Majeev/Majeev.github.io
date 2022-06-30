@@ -8,8 +8,8 @@ const Header = () => {
             <header className={css.header_large}>
                 <div className={css.main_container}>
                     <div className={css.welcome}>
-                        <div className={css.welcomeHero}>
-                            <img src={hero} className={css.hero}/>
+                        <div className={css.welcome_hero}>
+                            <img src={hero} className={css.hero} alt='hero'/>
                             <div className={css.welcome_description}>
                                 <h1>Hi! I am Jakub,</h1>
                                 <p> Front end Developer you are looking for!</p>
