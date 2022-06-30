@@ -1,7 +1,7 @@
 
 const About = () => {
     return (
-        <div className='container_large'></div>
+        <section id='about' className='container_large'>about</section>
     )
 }
 

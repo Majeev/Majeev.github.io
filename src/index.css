@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   list-style: none;
+  text-decoration: none;
   scroll-behavior: smooth;
 }
 body {
@@ -14,6 +15,10 @@ body {
 }
 html{
   font-size: 62.5%;
+}
+
+::-webkit-scrollbar{
+  display: none;
 }
 
 :root{
@@ -30,4 +35,8 @@ h1,h2,h3,h4,h5,h6 {
   height: 100vh;
   display: flex;
   justify-content: center;
+}
+
+section{
+  margin-top: 8rem;
 }

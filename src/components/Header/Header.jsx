@@ -4,7 +4,6 @@ import hero from '../../assets/computers.png'
 
 const Header = () => {
     return (
-        <div className='container_large'>
             <header className={css.header_large}>
                 <div className={css.main_container}>
                     <div className={css.welcome}>
@@ -27,7 +26,7 @@ const Header = () => {
                     <img src={WelcomePhoto} alt='programming' className={css.welcome_photo}/>
                 </div>
             </header>
-        </div>
+
     )
 }
 

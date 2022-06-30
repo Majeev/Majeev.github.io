@@ -13,12 +13,16 @@
     z-index: 100;
 }
 
-.nav_icon {
+.nav_container a {
+    color: black;
     background: none;
     cursor: pointer;
     font-size: 3rem;
     transform: translateY(8%);
     transition: all .5s;
+}
+.nav_container a.nav_active {
+    color: var(--main-color);
 }
 
 .nav_container a:hover {
