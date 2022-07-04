@@ -34,6 +34,7 @@ html{
   --section-text-color: #555555;
   --font-header: 2rem;
   --font-normal: 1.7rem;
+  --font-small: 1rem;
   --margin-24px: 2.4rem;
 }
 h1,h2,h3,h4,h5,h6 {
