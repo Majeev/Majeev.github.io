@@ -1,13 +1,15 @@
 .about{
-    align-items: center;
+    /*align-items: center;*/
 }
 .about__text, .about img {
-    width: 50%;
+    width: 60%;
     margin: var(--margin-24px);
 }
+
 .about img {
+    width: 40%;
     border-radius: 15px;
-    height: 640px;
+    height: auto;
 }
 
 .about__text {
@@ -36,13 +38,20 @@
 
 }
 
-/*@media (max-width: 1024px) {*/
-/*    .about_wrapper {*/
-/*        flex-direction: column;*/
-/*    }*/
-/*    .about_text, .about_image {*/
-/*       width: 100%;*/
-
-/*    }*/
-/*}*/
-
+@media (max-width: 1024px) {
+    .about {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .about h2, .about h3 {
+        display: block;
+        text-align: center;
+    }
+    .about__text, .about img {
+        width: 80%;
+        padding: 0 2rem;
+    }
+    .about img {
+        padding: 0;
+    }
+}

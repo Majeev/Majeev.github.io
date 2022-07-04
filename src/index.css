@@ -65,3 +65,9 @@ img {
   display: block;
   object-fit: cover;
 }
+
+@media (max-width: 1024px) {
+  section {
+    margin-top: 10rem;
+  }
+}
