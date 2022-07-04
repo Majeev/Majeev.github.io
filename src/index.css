@@ -32,6 +32,8 @@ html{
   --secondary-color: #232325;
   --secondary-background: #f7f7f9;
   --section-text-color: #555555;
+  --font-normal: 2rem;
+  --margin-24px: 2.4rem;
 }
 h1,h2,h3,h4,h5,h6 {
   font-weight: 400;
@@ -48,13 +50,17 @@ h3 {
   font-size: 3.5rem;
   color: var(--secondary-color)
 }
-.container_large{
+.flex__center {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
 }
 
 section{
   margin-top: 16rem;
+}
+
+img {
+  display: block;
+  object-fit: cover;
 }

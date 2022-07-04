@@ -4,8 +4,8 @@ import hero from '../../assets/computers.png'
 
 const Header = () => {
     return (
-        <header className={css.header_large}>
-            <div className={css.welcome}>
+        <header className='flex__center'>
+            <div className={`${css.welcome} flex__center`}>
                 <div className={css.welcome__gradient}>
                     <img src={hero} className={css.hero} alt='hero'/>
                     <div className={css.welcome_description}>
