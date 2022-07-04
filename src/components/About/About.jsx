@@ -3,7 +3,7 @@ import me from '../../assets/me.jpg'
 
 const About = () => {
     return (
-        <section id='about' className='container_large'>
+        <section id='about' className='flex__center'>
 
             <div className={css.about_wrapper}>
                 <div className={css.about_image}>

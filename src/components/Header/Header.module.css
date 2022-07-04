@@ -1,11 +1,10 @@
-
 /*===== Welcome gradient section =====*/
 .welcome {
     position: relative;
     max-height: 640px;
 }
 
-.welcome_photo {
+.welcome__photo {
     width: 50%;
 }
 
@@ -20,20 +19,20 @@
 
 }
 
-.hero {
+.welcome__hero {
     max-width: 30%;
     height: auto;
     margin: var(--margin-24px);
 }
 
-.welcome_description {
+.welcome__description {
     color: var(--main-color);
     font-size: var(--font-normal);
     margin: var(--margin-24px);
 
 }
 
-.contactMe {
+.welcome__contact {
     padding: 0 10px;
     max-width: max-content;
     border: 3px solid var(--main-color);
@@ -45,7 +44,7 @@
     transition: all 0.5s;
 }
 
-.contactMe:hover {
+.welcome__contact:hover {
     background-color: var(--main-color);
     color: var(--main-background);
 }
@@ -63,7 +62,7 @@
 
 }
 
-.welcome_traits {
+.welcome__traits {
     position: absolute;
     top: 78%;
     left: 0;
@@ -72,36 +71,31 @@
     color: var(--main-color);
     font-size: var(--font-normal);
     width: 50%;
-
 }
 
-.passion {
+.traits__passion, .traits__desire, .traits__patience, .traits__creativity, .traits__discipline {
     opacity: 0;
     animation: traitsLoading 2s 1 forwards;
+}
+
+.traits__passion {
     animation-delay: .3s;
 }
 
-.desire {
-    opacity: 0;
-    animation: traitsLoading 2s 1 forwards;
+.traits__desire {
     animation-delay: .5s;
 }
 
-.patience {
-    opacity: 0;
-    animation: traitsLoading 2s 1 forwards;
+.traits__patience {
     animation-delay: 1s;
 }
 
-.creativity {
-    opacity: 0;
-    animation: traitsLoading 2s 1 forwards;
+.traits__creativity {
+
     animation-delay: 1.5s;
 }
 
-.discipline {
-    opacity: 0;
-    animation: traitsLoading 2s 1 forwards;
+.traits__discipline {
     animation-delay: 2s;
 }
 
@@ -122,39 +116,45 @@
 /*===== Welcome photo section =====*/
 
 
-
-
 /*===== Media queries =====*/
 @media (max-width: 1200px) {
     .welcome {
         flex-direction: column;
     }
-    .welcome__gradient, .welcome_photo {
+
+    .welcome__gradient, .welcome__photo {
         width: 100%;
         height: 300px;
     }
-    .hero {
+
+    .welcome__hero {
         max-width: 23%;
     }
-    .welcome_traits {
+
+    .welcome__traits {
         top: 45%;
         width: 100%;
     }
 }
+
 @media (max-width: 768px) {
-    .welcome_traits {
+    .welcome__traits {
         font-size: 2vw;
     }
-    .welcome_description {
+
+    .welcome__description {
         font-size: 3vw;
     }
+
     h1 {
         font-size: 3rem;
     }
-    .welcome__gradient, .welcome_photo {
+
+    .welcome__gradient, .welcome__photo {
         height: 250px;
     }
-    .contactMe {
+
+    .welcome__contact {
         min-width: 100%;
     }
 }
