@@ -1,58 +1,52 @@
 /*===== Containers =====*/
 .header_large {
     width: 100%;
-    height: 80vh;
     display: flex;
     justify-content: center;
-}
-
-.main_container {
-    height: 70%;
-    width: 100%;
-    display: flex;
 }
 
 /*===== Welcome gradient section =====*/
 .welcome {
     position: relative;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 50%;
-    max-height: 87%;
-    background: var(--main-background);
-    background: var(--main-gradient);
-    overflow: hidden;
+    width: 100%;
+    max-height: 640px;
 }
 
-.welcome_hero {
+.welcome_photo {
+    /*max-height: 100%;*/
+    min-width: 50%;
+    object-fit: cover;
+}
+
+.welcome__gradient {
+    background: var(--main-background);
+    background: var(--main-gradient);
     display: flex;
-    height: 100%;
-    width: 100%;
-    justify-content: space-evenly;
+    min-width: 50%;
     align-items: center;
-    margin: 0 10px;
+    justify-content: space-evenly;
+    max-height: 87%;
+
 }
 
 .hero {
-    width: 30%;
+    max-width: 30%;
     height: auto;
-    transform: translateY(15%);
+    margin: 2.4rem;
 }
 
 .welcome_description {
-    max-width: 100%;
     color: var(--main-color);
     font-size: 2rem;
-    overflow: hidden;
+    margin: 2.4rem;
+
 }
 
 .contactMe {
-    position: absolute;
-    width: 30%;
     padding: 0 10px;
-    min-width: max-content;
+    max-width: max-content;
     border: 3px solid var(--main-color);
     border-radius: 10px;
     text-align: center;
@@ -81,13 +75,16 @@
 }
 
 .welcome_traits {
+   position: absolute;
+    top: 78%;
+    left: 0;
     display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 5px;
+    justify-content: space-around;
+    /*margin-bottom: 5px;*/
     color: var(--main-color);
-    font-size: 2.3rem;
-    width: 100%;
-    overflow: hidden;
+    font-size: 2rem;
+    width: 50%;
+
 }
 
 .passion {
@@ -122,11 +119,11 @@
 
 @keyframes traitsLoading {
     10% {
-        opacity: 0%;
+        opacity: 0;
     }
     50% {
         opacity: 50%;
-        transform: scale(1.1);
+        transform: scale(.9);
     }
     100% {
         transform: scale(1);
@@ -135,73 +132,41 @@
 }
 
 /*===== Welcome photo section =====*/
-.welcome_photo {
-    width: 50%;
-    object-fit: cover;
-}
+
 
 
 
 /*===== Media queries =====*/
-@media (max-width: 1440px) {
-    .main_container {
+@media (max-width: 1200px) {
+    .welcome {
         flex-direction: column;
-        height: 100%;
     }
-    .welcome, .welcome_photo{
+    .welcome__gradient, .welcome_photo {
+        min-width: 100%;
+        height: 300px;
+    }
+    .hero {
+        max-width: 23%;
+    }
+    .welcome_traits {
+        top: 45%;
         width: 100%;
     }
-
-    .welcome {
-        height: 60%;
-    }
-    .welcome_photo {
-        height: 40%;
-    }
-    .welcome_description{
-        font-size: 2.2rem;
-    }
-    .contactMe {
-        width: 10%
-    }
-    .welcome_traits {
-        padding: 2rem 0 0 0;
-        /*margin: 2rem 0 0.5rem 0;*/
-    }
-    .hero {
-        width: 25%;
-        height: auto;
-    }
 }
-
 @media (max-width: 768px) {
-    .main_container {
-        height: 80%;
-    }
-    .welcome {
-        height: 50%;
-    }
-    .welcome_photo {
-        height: 50%;
-    }
-    .hero {
-        display: none;
-    }
-
-    .welcome_description {
-        font-size: 1.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .contactMe {
-        position: relative;
-       width: 90%;
-    }
     .welcome_traits {
-        font-size: 1.5vh;
-        padding-top: 0;
+        font-size: 2vw;
+    }
+    .welcome_description {
+        font-size: 2vw;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    .welcome__gradient, .welcome_photo {
+        height: 250px;
+    }
+    .contactMe {
+        min-width: 100%;
     }
 }

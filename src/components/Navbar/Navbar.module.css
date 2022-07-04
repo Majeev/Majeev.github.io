@@ -21,10 +21,18 @@
     transform: translateY(8%);
     transition: all .5s;
 }
-.nav_container a.nav_active {
+
+.nav_container a:hover,
+.nav_container a:focus,
+.nav_container a.nav_active{
     color: var(--main-color);
 }
 
-.nav_container a:hover {
-    color: var(--main-color);
+@media (max-width: 768px) {
+    .nav_container {
+        width: 200px;
+    }
+    .nav_container a {
+        font-size: 2rem;
+    }
 }
