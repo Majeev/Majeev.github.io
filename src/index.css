@@ -32,7 +32,8 @@ html{
   --secondary-color: #232325;
   --secondary-background: #f7f7f9;
   --section-text-color: #555555;
-  --font-normal: 2rem;
+  --font-header: 2rem;
+  --font-normal: 1.7rem;
   --margin-24px: 2.4rem;
 }
 h1,h2,h3,h4,h5,h6 {
@@ -57,7 +58,7 @@ h3 {
 }
 
 section{
-  margin-top: 16rem;
+  margin-top: 20rem;
 }
 
 img {
