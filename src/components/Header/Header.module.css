@@ -34,6 +34,9 @@
 
 .welcome__contact {
     padding: 0 10px;
+    font-size: var(--font-normal);
+    background: none;
+    color: var(--main-color);
     max-width: max-content;
     border: 3px solid var(--main-color);
     border-radius: 10px;

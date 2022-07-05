@@ -11,7 +11,7 @@ const Header = () => {
                     <div className={css.welcome__description}>
                         <h1>Hi! I am Jakub,</h1>
                         <p> Frontend Developer you are looking for!</p>
-                        <div className={css.welcome__contact}>Contact Me!</div>
+                        <button className={css.welcome__contact}>Contact Me!</button>
                     </div>
                 </div>
                 <div className={css.welcome__traits}>
