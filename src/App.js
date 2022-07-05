@@ -7,12 +7,11 @@ import Skills from './components/Skills/Skills'
 function App() {
     return (
         <div className="App">
-            <Navbar/>
+            {/*<Navbar/>*/}
             <Header/>
             <About />
-            {/*<Skills />*/}
-            {/*<Skills />*/}
-            {/*<Skills />*/}
+            <Skills />
+
         </div>
     );
 }

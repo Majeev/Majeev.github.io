@@ -1,0 +1,27 @@
+.skills__header {
+    text-align: center;
+}
+
+.skills__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.skills__item {
+    margin: var(--margin-24px);
+    border: 2px solid var(--main-background);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column-reverse;;
+    text-align: center;
+    min-width: 15%;
+}
+.skills__item img {
+    padding: 1rem;
+}
+.skills__item span {
+    font-weight: bold;
+    font-size: var(--font-normal);
+}
+

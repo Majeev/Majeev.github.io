@@ -57,9 +57,11 @@ h3 {
   display: flex;
   justify-content: center;
 }
-
+.column {
+  flex-direction: column;
+}
 section{
-  margin-top: 20rem;
+  margin-top: 24rem;
 }
 
 img {
