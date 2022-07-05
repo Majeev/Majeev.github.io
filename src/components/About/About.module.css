@@ -32,7 +32,7 @@
 .about img {
     width: 40%;
     border-radius: 15px;
-    height: auto;
+    max-height: 640px;
 }
 
 @media (max-width: 1024px) {
