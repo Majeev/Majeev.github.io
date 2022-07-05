@@ -23,11 +23,31 @@ const Skills = () => {
             name: 'Typescript',
             image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
         },
+        {
+            name: 'Git',
+            image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg"
+        },
+        {
+            name: 'Github',
+            image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
+        },
+        {
+            name: 'Webstorm',
+            image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webstorm/webstorm-original-wordmark.svg"
+        },
+        {
+            name: 'Photoshop',
+            image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg"
+        },
+        {
+            name: 'AWS',
+            image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+        },
 
 
+]
 
 
-    ]
 
 
     return (
