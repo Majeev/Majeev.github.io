@@ -1,6 +1,7 @@
 .skills__header {
     text-align: center;
     margin-bottom: 3.5rem;
+    margin-top: var(--margin-24px);
 }
 
 .skills__container {
