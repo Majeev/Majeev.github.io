@@ -45,9 +45,7 @@ const Skills = () => {
         },
 
 
-]
-
-
+    ]
 
 
     return (
@@ -58,7 +56,7 @@ const Skills = () => {
             </header>
             <div className={css.skills__container}>
                 {gear.map((item) => {
-                    return (<div className={css.skills__item}>
+                    return (<div className={css.skills__item} key={item.name}>
                         <img src={item.image} alt='programming languages section'/></div>)
                 })}
             </div>

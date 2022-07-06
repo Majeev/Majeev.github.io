@@ -1,7 +1,9 @@
 import css from './Contact.module.css'
 import {AiFillGithub, AiFillLinkedin} from "react-icons/ai";
+import {useState} from "react";
 
 const Contact = () => {
+
     return (
         <section id='contact' className='flex__center column'>
             <header className={css.contact__header}>
@@ -10,9 +12,9 @@ const Contact = () => {
             </header>
             <p className={css.pe}>Leave a message here!</p>
             <form className={css.contact__form}>
-                <input type='text' placeholder='Your name'/>
-                <input type='email' placeholder='Your e-mail'/>
-                <textarea placeholder='Message'/>
+                <input required type='text' name='name'placeholder='Your name'/>
+                <input required type='email' name='email' placeholder='Your e-mail'/>
+                <textarea required name='message' placeholder='Message'/>
                 <button className={css.message__submit}>Send Message</button>
             </form>
             <div className={css.contact__alternatives}>
