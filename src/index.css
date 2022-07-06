@@ -37,6 +37,11 @@ html{
   --font-small: 1rem;
   --margin-24px: 2.4rem;
 }
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
 h1,h2,h3,h4,h5,h6 {
   font-weight: 400;
 }
@@ -59,9 +64,26 @@ h3 {
 }
 .column {
   flex-direction: column;
+  align-items: center;
 }
 section{
   margin-top: 24rem;
+  color: var(--section-text-color)
+}
+textarea, input {
+  color: var(--section-text-color);
+  width: 80%;
+  font-size: var(--font-normal);
+  background: #f0f0f0;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #e2e2e2;
+  margin-bottom: 1rem;
+}
+
+textarea{
+  resize: none;
+  height: 100px
 }
 
 img {
