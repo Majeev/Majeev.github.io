@@ -47,7 +47,6 @@ const Skills = () => {
 
     ]
 
-
     return (
         <section id='skills' className='flex__center column'>
             <header className={css.skills__header}>

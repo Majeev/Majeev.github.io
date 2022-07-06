@@ -1,7 +1,7 @@
 /*===== Welcome gradient section =====*/
 .welcome {
-    position: relative;
     max-height: 640px;
+    position: relative;
 }
 
 .welcome__photo {
@@ -9,42 +9,38 @@
 }
 
 .welcome__gradient {
+    align-items: center;
     background: var(--main-background);
     background: var(--main-gradient);
     display: flex;
-    min-width: 50%;
-    align-items: center;
     justify-content: space-evenly;
     max-height: 87%;
-
+    min-width: 50%;
 }
 
 .welcome__hero {
-    max-width: 30%;
     height: auto;
     margin: var(--margin-24px);
+    max-width: 30%;
 }
 
 .welcome__description {
     color: var(--main-color);
     font-size: var(--font-header);
     margin: var(--margin-24px);
-
 }
 
 .welcome__contact {
-    padding: 0 10px;
-    font-size: var(--font-normal);
-    background: none;
-    color: var(--main-color);
-    max-width: max-content;
-    border: 3px solid var(--main-color);
-    border-radius: 10px;
-    text-align: center;
-    margin: 20px 0;
-    cursor: pointer;
     animation: contactBounce 8s infinite forwards;
-    transition: all 0.5s;
+    background: none;
+    border: 3px solid var(--main-color);
+    color: var(--main-color);
+    font-size: var(--font-normal);
+    margin: 20px 0;
+    max-width: max-content;
+    padding: 0 10px;
+    text-align: center;
+    transition: var(--transition);
 }
 
 .welcome__contact:hover {
@@ -62,23 +58,22 @@
     60% {
         transform: scale(1);
     }
-
 }
 
 .welcome__traits {
+    color: var(--main-color);
+    display: flex;
+    font-size: var(--font-header);
+    justify-content: space-around;
+    left: 0;
     position: absolute;
     top: 78%;
-    left: 0;
-    display: flex;
-    justify-content: space-around;
-    color: var(--main-color);
-    font-size: var(--font-header);
     width: 50%;
 }
 
 .traits__passion, .traits__desire, .traits__patience, .traits__creativity, .traits__discipline {
-    opacity: 0;
     animation: traitsLoading 2s 1 forwards;
+    opacity: 0;
 }
 
 .traits__passion {
@@ -111,12 +106,10 @@
         transform: scale(.9);
     }
     100% {
-        transform: scale(1);
         opacity: 100%;
+        transform: scale(1);
     }
 }
-
-/*===== Welcome photo section =====*/
 
 
 /*===== Media queries =====*/
@@ -126,8 +119,8 @@
     }
 
     .welcome__gradient, .welcome__photo {
-        width: 100%;
         height: 300px;
+        width: 100%;
     }
 
     .welcome__hero {

@@ -25,7 +25,7 @@ const Contact = () => {
                 <h2>Let's talk!</h2>
                 <h3>Contact me</h3>
             </header>
-            <p className={css.pe}>Leave a message here!</p>
+            <p>Leave a message here!</p>
             <form ref={form} onSubmit={sendEmail} className={css.contact__form}>
                 <input required type='text' name='name' placeholder='Your name'/>
                 <input required type='email' name='email' placeholder='Your e-mail'/>
@@ -33,7 +33,7 @@ const Contact = () => {
                 <button className={css.message__submit}>Send Message</button>
             </form>
             <div className={css.contact__alternatives}>
-                <p className={css.pe}>Or find me on:</p>
+                <p>Or find me on:</p>
                 <a href='https://www.linkedin.com/in/jakub-majewski-528553203/' target='_blank'><AiFillLinkedin/></a>
                 <a href='https://github.com/Majeev' target='_blank'><AiFillGithub/></a>
             </div>

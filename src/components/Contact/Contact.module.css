@@ -1,41 +1,35 @@
 .contact__header {
+    margin: var(--margin-24px);
     text-align: center;
-    margin-bottom: 3.5rem;
-    margin-top: var(--margin-24px);
 }
-.contact__form{
+
+.contact__form {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 50%;
     padding: 2rem;
-}
-
-
-.pe{
-    font-size: var(--font-normal) !important;
+    width: 50%;
 }
 
 .message__submit {
-    width: 80%;
-    padding: 1.5rem;
-    border-radius: 10px;
-    border: none;
-    background: var(--main-gradient);
     background: var(--main-background);
+    background: var(--main-gradient);
+    border: none;
     color: var(--main-color);
     font-size: var(--font-normal);
     margin-bottom: var(--margin-24px);
-    transition: all 0.5s;
+    padding: 1.5rem;
+    transition: var(--transition);
+    width: 80%;
 }
 
-.message__submit:hover{
-    background: rgb(221,158,143);
+.message__submit:hover {
+    background: rgb(221, 158, 143);
 }
 
-.contact__alternatives{
-    text-align: center;
+.contact__alternatives {
     font-size: 3rem;
+    text-align: center;
 }
 
 @media (max-width: 1024px) {

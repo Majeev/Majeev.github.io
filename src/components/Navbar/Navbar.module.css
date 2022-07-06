@@ -14,17 +14,17 @@
 }
 
 .nav_container a {
-    color: black;
     background: none;
+    color: black;
     cursor: pointer;
     font-size: 3rem;
     transform: translateY(8%);
-    transition: all .5s;
+    transition: var(--transition);
 }
 
 .nav_container a:hover,
 .nav_container a:focus,
-.nav_container a.nav_active{
+.nav_container a.nav_active {
     color: var(--main-color);
 }
 
@@ -32,6 +32,7 @@
     .nav_container {
         width: 200px;
     }
+
     .nav_container a {
         font-size: 2rem;
     }
