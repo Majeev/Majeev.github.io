@@ -37,3 +37,9 @@
     text-align: center;
     font-size: 3rem;
 }
+
+@media (max-width: 1024px) {
+    .contact__form, .message__submit {
+        width: 100%;
+    }
+}
