@@ -1,8 +1,23 @@
 import css from './Contact.module.css'
 import {AiFillGithub, AiFillLinkedin} from "react-icons/ai";
-import {useState} from "react";
+import React, { useRef } from 'react';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        e.target.reset();
+
+        emailjs.sendForm('service_8t4cy3g', 'template_l8i3asf', form.current, 'ySb27JrFCveegI3Ge')
+               .then((result) => {
+                   console.log(result.text);
+               }, (error) => {
+                   console.log(error.text);
+               });
+    };
 
     return (
         <section id='contact' className='flex__center column'>
@@ -11,8 +26,8 @@ const Contact = () => {
                 <h3>Contact me</h3>
             </header>
             <p className={css.pe}>Leave a message here!</p>
-            <form className={css.contact__form}>
-                <input required type='text' name='name'placeholder='Your name'/>
+            <form ref={form} onSubmit={sendEmail} className={css.contact__form}>
+                <input required type='text' name='name' placeholder='Your name'/>
                 <input required type='email' name='email' placeholder='Your e-mail'/>
                 <textarea required name='message' placeholder='Message'/>
                 <button className={css.message__submit}>Send Message</button>
