@@ -138,4 +138,8 @@ img {
         margin-top: 8rem !important;
     }
 }
+footer p {
+    font-size: var(--font-small);
+    padding: 2rem 5rem;
+}
 
