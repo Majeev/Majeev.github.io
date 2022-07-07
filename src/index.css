@@ -141,6 +141,7 @@ img {
 footer p {
     color: var(--section-text-color);
     font-size: var(--font-small);
-    padding: 2rem 5rem;
+    padding: 2rem;
+    text-align: center;
 }
 
