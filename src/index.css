@@ -133,3 +133,9 @@ img {
     }
 }
 
+@media (max-width: 400px) {
+    section {
+        margin-top: 8rem !important;
+    }
+}
+
