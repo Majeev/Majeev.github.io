@@ -135,11 +135,14 @@
 
 @media (max-width: 768px) {
     .welcome__traits {
-        font-size: 2vw;
+        font-size: var(--font-small);
     }
 
     .welcome__description {
-        font-size: 3vw;
+        font-size: var(--font-small);
+    }
+    .welcome__hero {
+        display: none;
     }
 
     h1 {
