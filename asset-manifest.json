@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Majeev.github.io/static/css/main.159266ad.css",
+    "main.js": "/Majeev.github.io/static/js/main.d5fb2e59.js",
+    "static/media/programming.jpg": "/Majeev.github.io/static/media/programming.1db9a96114d70e15ccb3.jpg",
+    "static/media/me.jpg": "/Majeev.github.io/static/media/me.1b94f4a259636b87ef0d.jpg",
+    "static/media/computers.png": "/Majeev.github.io/static/media/computers.f3aa3a2c87203f1c6bc8.png",
+    "index.html": "/Majeev.github.io/index.html",
+    "main.159266ad.css.map": "/Majeev.github.io/static/css/main.159266ad.css.map",
+    "main.d5fb2e59.js.map": "/Majeev.github.io/static/js/main.d5fb2e59.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.159266ad.css",
+    "static/js/main.d5fb2e59.js"
+  ]
+}
