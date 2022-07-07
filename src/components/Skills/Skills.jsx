@@ -51,7 +51,7 @@ const Skills = () => {
         <section id='skills' className='flex__center column'>
             <header className={css.skills__header}>
                 <h2>Expertise</h2>
-                <h3>Technologies and tools</h3>
+                <h3>Technologies andsd tools</h3>
             </header>
             <div className={css.skills__container}>
                 {gear.map((item) => {
