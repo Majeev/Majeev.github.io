@@ -3,6 +3,9 @@
     margin-top: var(--margin-24px);
     text-align: center;
 }
+.h3__mobile {
+    display: none;
+}
 
 .skills__container {
     display: flex;
@@ -49,5 +52,14 @@
 @media (max-width: 1024px) {
     .skills__item:last-child:hover::after {
         font-size: var(--font-small);
+    }
+}
+
+@media (max-width: 460px) {
+    .h3__mobile {
+        display: inline;
+    }
+    .h3__large {
+        display: none;
     }
 }
