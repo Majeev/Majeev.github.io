@@ -1,6 +1,6 @@
-.about {
-    margin-top: 24rem;
-}
+/*.about {*/
+/*    margin-top: 24rem;*/
+/*}*/
 
 .about__text, .about img {
     margin: var(--margin-24px);

@@ -1,5 +1,6 @@
-.nav_container {
+.nav__container, .nav__blur {
     align-items: center;
+    background: var(--main-background);
     background: var(--main-gradient);
     border-radius: 30px;
     bottom: 7%;
@@ -11,9 +12,14 @@
     transform: translateX(-50%);
     width: 300px;
     z-index: 100;
+
+}
+.nav__blur {
+   background: none;
+    backdrop-filter: blur(10px);
 }
 
-.nav_container a {
+.nav__container a {
     background: none;
     color: black;
     cursor: pointer;
@@ -22,18 +28,18 @@
     transition: var(--transition);
 }
 
-.nav_container a:hover,
-.nav_container a:focus,
-.nav_container a.nav_active {
-    color: var(--main-color);
+.nav__container a:hover,
+.nav__container a:focus,
+.nav__container a.nav_active {
+    color: var(--secondary-background);
 }
 
 @media (max-width: 768px) {
-    .nav_container {
+    .nav__container {
         width: 200px;
     }
 
-    .nav_container a {
+    .nav__container a {
         font-size: 2rem;
     }
 }
