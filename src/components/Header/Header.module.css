@@ -1,159 +1,192 @@
-/*===== Welcome gradient section =====*/
-.welcome {
-    max-height: 640px;
-    position: relative;
-}
+/*!*===== Welcome gradient section =====*!*/
+/*.welcome {*/
+/*    max-height: 640px;*/
+/*    position: relative;*/
+/*}*/
 
-.welcome__photo {
-    width: 50%;
-}
+/*.welcome__photo {*/
+/*    width: 50%;*/
+/*}*/
 
-.welcome__gradient {
-    align-items: center;
+/*.welcome__gradient {*/
+/*    align-items: center;*/
+/*    background: var(--main-background);*/
+/*    background: var(--main-gradient);*/
+/*    display: flex;*/
+/*    justify-content: space-evenly;*/
+/*    max-height: 87%;*/
+/*    min-width: 50%;*/
+/*}*/
+
+/*.welcome__hero {*/
+/*    height: auto;*/
+/*    margin: var(--margin-24px);*/
+/*    max-width: 30%;*/
+/*}*/
+
+/*.welcome__description {*/
+/*    color: var(--main-color);*/
+/*    font-size: var(--font-header);*/
+/*    margin: var(--margin-24px);*/
+/*}*/
+
+/*.welcome__contact {*/
+/*    animation: contactBounce 8s infinite forwards;*/
+/*    background: none;*/
+/*    border: 3px solid var(--main-color);*/
+/*    color: var(--main-color);*/
+/*    font-size: var(--font-normal);*/
+/*    margin: 20px 0;*/
+/*    max-width: max-content;*/
+/*    padding: 0 10px;*/
+/*    text-align: center;*/
+/*    transition: var(--transition);*/
+/*}*/
+
+/*.welcome__contact:hover {*/
+/*    background-color: var(--main-color);*/
+/*    color: var(--main-background);*/
+/*}*/
+
+/*@keyframes contactBounce {*/
+/*    40% {*/
+/*        transform: scale(1);*/
+/*    }*/
+/*    50% {*/
+/*        transform: scale(1.1);*/
+/*    }*/
+/*    60% {*/
+/*        transform: scale(1);*/
+/*    }*/
+/*}*/
+
+/*.welcome__traits {*/
+/*    color: var(--main-color);*/
+/*    display: flex;*/
+/*    font-size: var(--font-header);*/
+/*    justify-content: space-around;*/
+/*    left: 0;*/
+/*    position: absolute;*/
+/*    top: 78%;*/
+/*    width: 50%;*/
+/*}*/
+
+/*.traits__passion, .traits__desire, .traits__patience, .traits__creativity, .traits__discipline {*/
+/*    animation: traitsLoading 2s 1 forwards;*/
+/*    opacity: 0;*/
+/*}*/
+
+/*.traits__passion {*/
+/*    animation-delay: .3s;*/
+/*}*/
+
+/*.traits__desire {*/
+/*    animation-delay: .5s;*/
+/*}*/
+
+/*.traits__patience {*/
+/*    animation-delay: 1s;*/
+/*}*/
+
+/*.traits__creativity {*/
+
+/*    animation-delay: 1.5s;*/
+/*}*/
+
+/*.traits__discipline {*/
+/*    animation-delay: 2s;*/
+/*}*/
+
+/*@keyframes traitsLoading {*/
+/*    10% {*/
+/*        opacity: 0;*/
+/*    }*/
+/*    50% {*/
+/*        opacity: 50%;*/
+/*        transform: scale(.9);*/
+/*    }*/
+/*    100% {*/
+/*        opacity: 100%;*/
+/*        transform: scale(1);*/
+/*    }*/
+/*}*/
+
+
+/*!*===== Media queries =====*!*/
+/*@media (max-width: 1200px) {*/
+/*    .welcome {*/
+/*        flex-direction: column;*/
+/*    }*/
+
+/*    .welcome__gradient, .welcome__photo {*/
+/*        height: 300px;*/
+/*        width: 100%;*/
+/*    }*/
+
+/*    .welcome__hero {*/
+/*        max-width: 23%;*/
+/*    }*/
+
+/*    .welcome__traits {*/
+/*        top: 45%;*/
+/*        width: 100%;*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 768px) {*/
+/*    .welcome__traits {*/
+/*        font-size: var(--font-small);*/
+/*    }*/
+
+/*    .welcome__description {*/
+/*        font-size: var(--font-small);*/
+/*    }*/
+/*    .welcome__hero {*/
+/*        display: none;*/
+/*    }*/
+
+/*    h1 {*/
+/*        font-size: 3rem;*/
+/*    }*/
+
+/*    .welcome__gradient, .welcome__photo {*/
+/*        height: 250px;*/
+/*    }*/
+
+/*    .welcome__contact {*/
+/*        min-width: 100%;*/
+/*    }*/
+/*}*/
+
+.header__container{
+    min-height: 100vh;
     background: var(--main-background);
-    background: var(--main-gradient);
-    display: flex;
-    justify-content: space-evenly;
-    max-height: 87%;
-    min-width: 50%;
-}
-
-.welcome__hero {
-    height: auto;
-    margin: var(--margin-24px);
-    max-width: 30%;
-}
-
-.welcome__description {
-    color: var(--main-color);
-    font-size: var(--font-header);
-    margin: var(--margin-24px);
-}
-
-.welcome__contact {
-    animation: contactBounce 8s infinite forwards;
-    background: none;
-    border: 3px solid var(--main-color);
-    color: var(--main-color);
-    font-size: var(--font-normal);
-    margin: 20px 0;
-    max-width: max-content;
-    padding: 0 10px;
+    background: var(--main-gradient);;
+    padding: 168px 0;
     text-align: center;
-    transition: var(--transition);
-}
-
-.welcome__contact:hover {
-    background-color: var(--main-color);
-    color: var(--main-background);
-}
-
-@keyframes contactBounce {
-    40% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    60% {
-        transform: scale(1);
-    }
-}
-
-.welcome__traits {
-    color: var(--main-color);
     display: flex;
-    font-size: var(--font-header);
-    justify-content: space-around;
-    left: 0;
-    position: absolute;
-    top: 78%;
-    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.traits__passion, .traits__desire, .traits__patience, .traits__creativity, .traits__discipline {
-    animation: traitsLoading 2s 1 forwards;
-    opacity: 0;
+.header__container h1,.header__container h3,.header__container p {
+    color: var(--main-color);
+    padding: 0 168px;
+}
+.header__container p {
+    padding-top: 50px;
 }
 
-.traits__passion {
-    animation-delay: .3s;
-}
-
-.traits__desire {
-    animation-delay: .5s;
-}
-
-.traits__patience {
-    animation-delay: 1s;
-}
-
-.traits__creativity {
-
-    animation-delay: 1.5s;
-}
-
-.traits__discipline {
-    animation-delay: 2s;
-}
-
-@keyframes traitsLoading {
-    10% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 50%;
-        transform: scale(.9);
-    }
-    100% {
-        opacity: 100%;
-        transform: scale(1);
-    }
-}
-
-
-/*===== Media queries =====*/
-@media (max-width: 1200px) {
-    .welcome {
-        flex-direction: column;
-    }
-
-    .welcome__gradient, .welcome__photo {
-        height: 300px;
-        width: 100%;
-    }
-
-    .welcome__hero {
-        max-width: 23%;
-    }
-
-    .welcome__traits {
-        top: 45%;
-        width: 100%;
-    }
+.header__container h3:after {
+    display: none;
 }
 
 @media (max-width: 768px) {
-    .welcome__traits {
-        font-size: var(--font-small);
+    .header__container h1,.header__container h3,.header__container p {
+        padding: 0 24px;
     }
-
-    .welcome__description {
-        font-size: var(--font-small);
-    }
-    .welcome__hero {
-        display: none;
-    }
-
-    h1 {
-        font-size: 3rem;
-    }
-
-    .welcome__gradient, .welcome__photo {
-        height: 250px;
-    }
-
-    .welcome__contact {
-        min-width: 100%;
+    .header__container p {
+        padding-top: 25px;
     }
 }
