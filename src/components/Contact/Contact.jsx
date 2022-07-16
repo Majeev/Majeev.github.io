@@ -1,15 +1,16 @@
 import css from './Contact.module.css'
 import {AiFillGithub, AiFillLinkedin} from "react-icons/ai";
-import React, { useRef } from 'react';
+import React, {useRef, useState} from 'react';
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
-
+    const [confirm, setConfirm] = useState(false)
     const form = useRef();
 
     const sendEmail = (e) => {
         e.preventDefault();
         e.target.reset();
+        setConfirm(true)
 
         emailjs.sendForm('service_8t4cy3g', 'template_l8i3asf', form.current, 'ySb27JrFCveegI3Ge')
                .then((result) => {
@@ -30,7 +31,8 @@ const Contact = () => {
                 <input required type='text' name='name' placeholder='Your name'/>
                 <input required type='email' name='email' placeholder='Your e-mail'/>
                 <textarea required name='message' placeholder='Message'/>
-                <button className={css.message__submit}>Send Message</button>
+                <button className={confirm ? css.none : css.message__submit}>Send Message</button>
+                <button className={confirm ? css.message__submit : css.none}>Message Sent!</button>
             </form>
             <div className={css.contact__alternatives}>
                 <p>Or find me on:</p>

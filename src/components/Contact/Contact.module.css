@@ -5,6 +5,7 @@
 
 .contact__form {
     align-items: center;
+    position: relative;
     display: flex;
     flex-direction: column;
     padding: 2rem;
@@ -26,6 +27,9 @@
 .message__submit:hover {
     background: rgb(221, 158, 143);
     background: linear-gradient(117deg, rgba(221, 158, 143, 1) 0%, rgba(208, 162, 118, 1) 57%, rgba(184, 101, 139, 1) 100%);
+}
+.none {
+    display: none;
 }
 
 .contact__alternatives {
