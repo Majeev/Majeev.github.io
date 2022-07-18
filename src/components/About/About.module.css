@@ -25,7 +25,7 @@
 .about__text h3::after {
     background-color: var(--main-background);
     bottom: 0;
-    content: '';
+    content: "";
     height: 2px;
     left: 50%;
     position: absolute;

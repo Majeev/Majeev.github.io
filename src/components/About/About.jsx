@@ -1,10 +1,10 @@
-import css from './About.module.css'
-import me from '../../assets/me.jpg'
+import css from "./About.module.css"
+import me from "../../assets/me.jpg"
 
 const About = () => {
     return (
-        <section id='about' className={`${css.about} flex__center`}>
-            <img src={me} alt='This is me on a skijet'/>
+        <section id="about" className={`${css.about} flex__center`}>
+            <img src={me} alt="This is me on a skijet"/>
             <div className={css.about__text}>
                 <h2>Get to know</h2>
                 <h3>About me</h3>

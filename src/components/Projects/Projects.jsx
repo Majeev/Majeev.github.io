@@ -1,7 +1,7 @@
-import css from './Projects.module.css'
-import portfolio from '../../assets/portfolio.jpg'
-import todo from '../../assets/todolist.jpg'
-import pokedex from '../../assets/pokedex.jpg'
+import css from "./Projects.module.css"
+import portfolio from "../../assets/portfolio.jpg"
+import todo from "../../assets/todolist.jpg"
+import pokedex from "../../assets/pokedex.jpg"
 import {SiCss3, SiHtml5, SiJavascript} from "react-icons/si";
 import {FaReact} from "react-icons/fa";
 import {AiFillApi} from "react-icons/ai";
@@ -9,7 +9,7 @@ import {AiFillApi} from "react-icons/ai";
 
 const Projects = () => {
     return (
-        <section id='projects' className='flex__center column'>
+        <section id="projects" className="flex__center column">
             <header className={css.projects__header}>
                 <h2>Some of my hobbyist projects</h2>
                 <h3>Experience</h3>

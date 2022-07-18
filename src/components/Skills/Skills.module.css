@@ -40,7 +40,7 @@
 
 .skills__item:last-child:hover::after {
     border-bottom: 2px solid var(--main-background);
-    content: 'Work in progress';
+    content: "Work in progress";
     font-size: var(--font-normal);
     left: 50%;
     position: absolute;
