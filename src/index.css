@@ -48,7 +48,7 @@ button {
     cursor: pointer;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h5, h6 {
     font-weight: 400;
 }
 
@@ -56,7 +56,7 @@ h1 {
     font-size: 6rem;
 }
 
-h2 {
+h2, h4 {
     color: var(--section-text-color);
     font-size: 1.5rem;
 }
@@ -72,7 +72,12 @@ h3 {
     position: relative;
 }
 
-h3::after {
+h4 {
+    position: relative;
+    font-size: 2rem;
+}
+
+h3::after, h4:after {
     background-color: var(--main-background);
     bottom: 0;
     content: '';
@@ -128,12 +133,15 @@ img {
     header span {
         font-size: 2.7rem;
     }
+
     h1 {
         font-size: 4rem;
     }
+
     section {
         margin-top: 10rem;
     }
+
     textarea, input {
         width: 100%;
     }
@@ -144,6 +152,7 @@ img {
         margin-top: 8rem !important;
     }
 }
+
 footer p {
     color: var(--section-text-color);
     font-size: var(--font-small);
