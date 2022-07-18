@@ -37,7 +37,7 @@
     display: flex;
     font-size: 2rem;
     justify-content: space-evenly;
-    margin-right: var(--margin-24px);
+    margin: 1rem var(--margin-24px);
     width:80%;
 }
 
