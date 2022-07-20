@@ -38,7 +38,7 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className={css.projects__card}>
-                    <a href="#" target="_blank"><h4>Pokédex</h4></a>
+                    <a href="https://majeev.github.io/Pokedex/" target="_blank"><h4>Pokédex</h4></a>
                     <img src={pokedex} alt="pokedex"/>
                     <div className={css.projects__technologies}>
                         <SiHtml5/>
