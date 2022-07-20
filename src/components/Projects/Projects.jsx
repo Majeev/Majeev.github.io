@@ -16,13 +16,14 @@ const Projects = () => {
             </header>
             <div className={css.projects__container}>
                 <div className={css.projects__card}>
-                    <a href="https://github.com/Majeev/Majeev.github.io" target="_blank"><h4>Portfolio</h4></a>
+                    <a href="#"><h4>Portfolio</h4></a>
                     <img src={portfolio} alt="Portfolio"/>
                     <div className={css.projects__technologies}>
                         <SiHtml5/>
                         <SiCss3/>
                         <SiJavascript/>
                         <FaReact/>
+                        <a href= "https://github.com/Majeev/Majeev.github.io" target="_blank"><AiFillGithub /></a>
                     </div>
                 </div>
                 <div className={css.projects__card}>
