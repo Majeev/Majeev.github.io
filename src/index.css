@@ -147,9 +147,12 @@ img {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 460px) {
     section {
         margin-top: 8rem !important;
+    }
+    h1 {
+        font-size: 3rem;
     }
 }
 
