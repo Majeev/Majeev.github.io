@@ -23,7 +23,7 @@
 }
 
 .skills__item img {
-    max-height: 175px;
+    max-height: 140px;
     object-fit: fill;
     padding: 1rem;
 }
