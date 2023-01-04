@@ -32,8 +32,8 @@ const Skills = () => {
             image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
         },
         {
-            name: "Webstorm",
-            image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webstorm/webstorm-original-wordmark.svg"
+            name: "Linux",
+            image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
         },
         {
             name: "Photoshop",

@@ -18,7 +18,7 @@ const About = () => {
                     I am type of person who demonstrates an insatiable desire for knowledge.
                     The more I know, the more I want to learn.
                     Right now, I am focusing on my Frontend skills.
-                    In the near future I would like to develop towards Blockchain developer.
+                    In the near future I would like to develop towards Fullstack developer.
                 </p>
                 <p>
                     Coding makes me feel very absorbed. Working on my projects is a fun for me, but the most
