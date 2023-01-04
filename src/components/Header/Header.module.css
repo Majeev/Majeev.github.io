@@ -23,6 +23,14 @@
     display: none;
 }
 
+.header__scroll {
+    position: absolute;
+    bottom: 10%;
+    right: -2%;
+    rotate: 90deg;
+    font-size: 1.5rem;
+}
+
 @media (max-width: 768px) {
     .header__container h1,.header__container h3,.header__container p {
         padding: 0 24px;
