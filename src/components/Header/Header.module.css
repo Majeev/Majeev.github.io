@@ -26,10 +26,26 @@
 .header__scroll {
     position: absolute;
     bottom: 10%;
-    right: -2%;
+    right: -1%;
     rotate: 90deg;
     font-size: 1.5rem;
+    animation: scrollD 8s infinite 2s;
 }
+
+.header__scroll::after {
+    content: '';
+    border: solid var(--main-color);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3.5px;
+    margin: 0 4px;
+    rotate: -45deg;
+}
+
+.header__noAnim {
+    animation: none
+}
+   
 
 @media (max-width: 768px) {
     .header__container h1,.header__container h3,.header__container p {
@@ -38,5 +54,17 @@
     .header__container p {
         padding-top: 16px;
     }
+    .header__scroll {
+        font-size: 1rem;
+    }
+    .header__scroll::after {
+        padding: 2.5px;
+    }
 }
+
+@keyframes scrollD {
+    20% {translate: 0 75px }
+    40% {translate: 0 0;}
+}
+
 
