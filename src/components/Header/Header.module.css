@@ -33,9 +33,9 @@
 }
 
 .header__scroll::after {
-    border-width: 0 2px 2px 0;
-    border: solid var(--main-color);
     content: '';
+    border: solid var(--main-color);
+    border-width: 0 2px 2px 0;
     display: inline-block;
     margin: 0 4px;
     padding: 3.5px;
