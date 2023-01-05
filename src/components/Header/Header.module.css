@@ -1,14 +1,14 @@
 
 .header__container{
-    min-height: 100vh;
+    align-items: center;
     background: var(--main-background);
     background: var(--main-gradient);;
-    padding: 168px 0;
-    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    min-height: 100vh;
+    padding: 168px 0;
+    text-align: center;
 }
 
 .header__container h1,.header__container h3,.header__container p {
@@ -24,21 +24,21 @@
 }
 
 .header__scroll {
-    position: absolute;
+    animation: scrollD 8s infinite 2s;
     bottom: 10%;
+    font-size: 1.5rem;
+    position: absolute;
     right: -1%;
     rotate: 90deg;
-    font-size: 1.5rem;
-    animation: scrollD 8s infinite 2s;
 }
 
 .header__scroll::after {
-    content: '';
-    border: solid var(--main-color);
     border-width: 0 2px 2px 0;
+    border: solid var(--main-color);
+    content: '';
     display: inline-block;
-    padding: 3.5px;
     margin: 0 4px;
+    padding: 3.5px;
     rotate: -45deg;
 }
 
