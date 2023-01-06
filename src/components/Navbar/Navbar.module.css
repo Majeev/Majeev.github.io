@@ -38,6 +38,7 @@
 @media (max-width: 768px) {
   .nav__container {
     width: 200px;
+    height: 40px;
   }
 
   .nav__container a {
