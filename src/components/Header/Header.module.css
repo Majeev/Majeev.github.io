@@ -1,64 +1,68 @@
-
-.header__container{
-    align-items: center;
-    background: var(--main-background);
-    background: var(--main-gradient);;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-    padding: 168px 0;
-    text-align: center;
+.header__container {
+  align-items: center;
+  background: var(--main-background);
+  background: var(--main-gradient);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  padding: 168px 0;
+  text-align: center;
 }
 
-.header__container h1,.header__container h3,.header__container p {
-    color: var(--main-color);
-    padding: 0 168px;
+.header__container h1,
+.header__container h3,
+.header__container p {
+  color: var(--main-color);
+  padding: 0 168px;
 }
 .header__container p {
-    padding-top: 50px;
+  padding-top: 50px;
 }
 
 .header__container h3:after {
-    display: none;
+  display: none;
 }
 
 .header__scroll {
-    animation: scrollDown 8s infinite 2s;
-    bottom: 10%;
-    font-size: 1rem;
-    position: absolute;
-    right: -1%;
-    rotate: 90deg;
+  animation: scrollDown 8s infinite 2s;
+  bottom: 10%;
+  font-size: 1rem;
+  position: absolute;
+  right: -1%;
+  rotate: 90deg;
 }
 
 .header__scroll::after {
-    content: '';
-    border: solid var(--main-color);
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    margin: 0 4px;
-    padding: 2.5px;
-    rotate: -45deg;
+  content: "";
+  border: solid var(--main-color);
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  margin: 0 4px;
+  padding: 2.5px;
+  rotate: -45deg;
 }
 
 .header__noAnim {
-    animation: none
+  animation: none;
 }
-   
 
 @media (max-width: 768px) {
-    .header__container h1,.header__container h3,.header__container p {
-        padding: 0 24px;
-    }
-    .header__container p {
-        padding-top: 16px;
-    }
-}   
-
-@keyframes scrollDown {
-    20% {translate: 0 75px }
-    40% {translate: 0 0;}
+  .header__container h1,
+  .header__container h3,
+  .header__container p {
+    padding: 0 24px;
+  }
+  .header__container p {
+    padding-top: 16px;
+  }
 }
 
-
+@keyframes scrollDown {
+  20% {
+    translate: 0 75px;
+  }
+  40% {
+    translate: 0 0;
+  }
+}

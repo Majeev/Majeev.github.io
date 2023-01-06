@@ -1,165 +1,181 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 * {
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    list-style: none;
-    margin: 0;
-    outline: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  text-decoration: none;
 }
 
 body {
-    background-color: var(--secondary-background);
-    display: block;
+  background-color: var(--secondary-background);
+  display: block;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 :root {
-    --default-radius: 10px;
-    --secondary-background: #f4f7f6;
-    --font-header: 2rem;
-    --font-normal: 1.7rem;
-    --font-small: 1rem;
-    --main-background: rgb(231, 158, 143);
-    --main-gradient: linear-gradient(117deg, rgba(231, 158, 143, 1) 0%, rgba(218, 162, 118, 1) 57%, rgba(194, 101, 139, 1) 100%);
-    --margin-24px: 2.4rem;
-    --main-color: #232325;
-    --section-text-color: #555555;
-    --transition: all 0.5s;
+  --default-radius: 10px;
+  --secondary-background: #f4f7f6;
+  --font-header: 2rem;
+  --font-normal: 1.7rem;
+  --font-small: 1rem;
+  --main-background: rgb(231, 158, 143);
+  --main-gradient: linear-gradient(
+    117deg,
+    rgba(231, 158, 143, 1) 0%,
+    rgba(218, 162, 118, 1) 57%,
+    rgba(194, 101, 139, 1) 100%
+  );
+  --margin-24px: 2.4rem;
+  --main-color: #232325;
+  --section-text-color: #555555;
+  --transition: all 0.5s;
 }
 
-a, a:hover, a:focus, a:active {
-    color: inherit;
-    text-decoration: none;
+a,
+a:hover,
+a:focus,
+a:active {
+  color: inherit;
+  text-decoration: none;
 }
 
 button {
-    border-radius: var(--default-radius);
-    cursor: pointer;
+  border-radius: var(--default-radius);
+  cursor: pointer;
 }
 
-h1, h2, h3, h5, h6 {
-    font-weight: 400;
+h1,
+h2,
+h3,
+h5,
+h6 {
+  font-weight: 400;
 }
 
 h1 {
-    font-size: 6rem;
+  font-size: 6rem;
 }
 
-h2, h4 {
-    color: var(--section-text-color);
-    font-size: 1.5rem;
+h2,
+h4 {
+  color: var(--section-text-color);
+  font-size: 1.5rem;
 }
 
-h3, header span {
-    color: var(--main-color);
-    font-size: 3.5rem;
+h3,
+header span {
+  color: var(--main-color);
+  font-size: 3.5rem;
 }
 
 h3 {
-    display: inline;
-    padding-bottom: 0.3rem;
-    position: relative;
+  display: inline;
+  padding-bottom: 0.3rem;
+  position: relative;
 }
 
 h4 {
-    position: relative;
-    font-size: 2rem;
+  position: relative;
+  font-size: 2rem;
 }
 
-h3::after, h4:after {
-    background-color: var(--main-background);
-    bottom: 0;
-    content: "";
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    transform: translateX(-50%);
-    width: 100%;
+h3::after,
+h4:after {
+  background-color: var(--main-background);
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 100%;
 }
 
 p {
-    font-size: var(--font-normal);
+  font-size: var(--font-normal);
 }
 
 .flex__center {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .column {
-    align-items: center;
-    flex-direction: column;
+  align-items: center;
+  flex-direction: column;
 }
 
 section {
-    color: var(--section-text-color);
-    margin: 16rem 0;
+  color: var(--section-text-color);
+  margin: 16rem 0;
 }
 
-textarea, input {
-    background: #f0f0f0;
-    border-radius: var(--default-radius);
-    border: 1px solid #e2e2e2;
-    color: var(--section-text-color);
-    font-size: var(--font-normal);
-    margin-bottom: 1rem;
-    padding: 1rem;
-    width: 80%;
+textarea,
+input {
+  background: #f0f0f0;
+  border-radius: var(--default-radius);
+  border: 1px solid #e2e2e2;
+  color: var(--section-text-color);
+  font-size: var(--font-normal);
+  margin-bottom: 1rem;
+  padding: 1rem;
+  width: 80%;
 }
 
 textarea {
-    height: 100px;
-    resize: none;
+  height: 100px;
+  resize: none;
 }
 
 img {
-    display: block;
-    object-fit: cover;
+  display: block;
+  object-fit: cover;
 }
 
 @media (max-width: 1024px) {
-    header span {
-        font-size: 2.7rem;
-    }
+  header span {
+    font-size: 2.7rem;
+  }
 
-    h1 {
-        font-size: 4rem;
-    }
+  h1 {
+    font-size: 4rem;
+  }
 
-    section {
-        margin-top: 10rem;
-    }
+  section {
+    margin-top: 10rem;
+  }
 
-    textarea, input {
-        width: 100%;
-    }
+  textarea,
+  input {
+    width: 100%;
+  }
 }
 
 @media (max-width: 460px) {
-    section {
-        margin-top: 8rem !important;
-    }
-    h1 {
-        font-size: 3rem;
-    }
+  section {
+    margin-top: 8rem !important;
+  }
+  h1 {
+    font-size: 3rem;
+  }
 }
 
 footer p {
-    color: var(--section-text-color);
-    font-size: var(--font-small);
-    padding: 2.2rem;
-    text-align: center;
+  color: var(--section-text-color);
+  font-size: var(--font-small);
+  padding: 2.2rem;
+  text-align: center;
 }
-
