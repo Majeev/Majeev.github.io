@@ -24,7 +24,7 @@
 }
 
 .header__scroll {
-    animation: scrollD 8s infinite 2s;
+    animation: scrollDown 8s infinite 2s;
     bottom: 10%;
     font-size: 1rem;
     position: absolute;
@@ -54,9 +54,9 @@
     .header__container p {
         padding-top: 16px;
     }
-}
+}   
 
-@keyframes scrollD {
+@keyframes scrollDown {
     20% {translate: 0 75px }
     40% {translate: 0 0;}
 }
