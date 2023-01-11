@@ -1,3 +1,9 @@
+.contact__container {
+    background: url('../../assets/layered-waves-haikei-reverse.svg');
+    background-size: cover;
+    margin-bottom: 0;
+}
+
 .contact__header {
     margin: var(--margin-24px);
     text-align: center;
@@ -13,10 +19,9 @@
 }
 
 .message__submit {
-    background: var(--main-background);
-    background: var(--main-gradient);
     border: none;
-    color: var(--main-color);
+    background: var(--input-background);
+    color: var(--secondary-color);
     font-size: var(--font-normal);
     margin-bottom: var(--margin-24px);
     padding: 1.5rem;
@@ -25,21 +30,24 @@
 }
 
 .message__submit:hover {
-    background: rgb(221, 158, 143);
-    background: linear-gradient(
-        117deg,
-        rgba(221, 158, 143, 1) 0%,
-        rgba(208, 162, 118, 1) 57%,
-        rgba(184, 101, 139, 1) 100%
-    );
+    box-shadow: inset 0 0 10px #787878;
 }
 .none {
     display: none;
 }
 
 .contact__alternatives {
+    color: var(--main-color);
     font-size: 3rem;
     text-align: center;
+}
+
+.contact__alternatives a {
+    transition: var(--transition);
+}
+
+.contact__alternatives a:hover {
+    color: var(--secondary-background);
 }
 
 @media (max-width: 1024px) {
@@ -47,11 +55,4 @@
     .message__submit {
         width: 100%;
     }
-}
-
-.abc {
-    background: url('../../assets/layered-waves-haikei-reverse.svg');
-    background-size: cover;
-    margin-bottom: 0;
-    padding-bottom: 8rem;
 }

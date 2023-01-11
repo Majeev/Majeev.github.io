@@ -30,7 +30,9 @@ const Contact = () => {
     };
 
     return (
-        <section id='contact' className={`flex__center column ${css.abc}`}>
+        <section
+            id='contact'
+            className={`flex__center column ${css.contact__container}`}>
             <header className={css.contact__header}>
                 <h2>Let's talk!</h2>
                 <h3>Contact me</h3>

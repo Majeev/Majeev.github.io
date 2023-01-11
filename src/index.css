@@ -27,6 +27,7 @@ html {
 :root {
     --default-radius: 10px;
     --secondary-background: #f4f7f6;
+    --input-background: #f0f0f0;
     --font-header: 2rem;
     --font-normal: 1.7rem;
     --font-small: 1rem;
@@ -117,16 +118,15 @@ section {
 }
 
 footer p {
-    color: var(--section-text-color);
+    color: var(--main-color);
     font-size: var(--font-small);
-    padding: 5.2rem;
+    padding: 8rem 0 2.2rem 0;
     text-align: center;
 }
 
-
 textarea,
 input {
-    background: #f0f0f0;
+    background: var(--input-background);
     border-radius: var(--default-radius);
     border: 1px solid #e2e2e2;
     color: var(--section-text-color);
@@ -173,4 +173,3 @@ img {
         font-size: 3rem;
     }
 }
-
