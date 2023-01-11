@@ -1,7 +1,9 @@
 .header__container {
     align-items: center;
-    background: var(--main-background);
-    background: var(--main-gradient);
+    background: url('../../assets/layered-waves-haikei2.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;

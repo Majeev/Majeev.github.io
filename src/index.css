@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
+
 * {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
@@ -30,13 +31,6 @@ html {
     --font-header: 2rem;
     --font-normal: 1.7rem;
     --font-small: 1rem;
-    --main-background: rgb(231, 158, 143);
-    --main-gradient: linear-gradient(
-        117deg,
-        rgba(231, 158, 143, 1) 0%,
-        rgba(218, 162, 118, 1) 57%,
-        rgba(194, 101, 139, 1) 100%
-    );
     --margin-24px: 2.4rem;
     --main-color: #232325;
     --section-text-color: #555555;
@@ -77,7 +71,7 @@ h4 {
 h3,
 header span {
     color: var(--main-color);
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
 h3 {
