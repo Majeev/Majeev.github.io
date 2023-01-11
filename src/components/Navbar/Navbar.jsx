@@ -39,31 +39,31 @@ const Navbar = () => {
             <a
                 href='#'
                 onClick={() => setActiveNav('#')}
-                className={activeNav === '#' ? css.nav_active : ''}>
+                className={activeNav === '#' ? css.nav__active : ''}>
                 {mobile ? <RiHome3Line /> : 'Home'}
             </a>
             <a
                 href='#about'
                 onClick={() => setActiveNav('#about')}
-                className={activeNav === '#about' ? css.nav_active : ''}>
+                className={activeNav === '#about' ? css.nav__active : ''}>
                 {mobile ? <BsInfoCircle /> : 'About me'}
             </a>
             <a
                 href='#skills'
                 onClick={() => setActiveNav('#skills')}
-                className={activeNav === '#skills' ? css.nav_active : ''}>
+                className={activeNav === '#skills' ? css.nav__active : ''}>
                 {mobile ? <BsGear /> : 'Tech stack'}
             </a>
             <a
                 href='#projects'
                 onClick={() => setActiveNav('#projects')}
-                className={activeNav === '#projects' ? css.nav_active : ''}>
+                className={activeNav === '#projects' ? css.nav__active : ''}>
                 {mobile ? <TbBriefcase /> : 'Projects'}
             </a>
             <a
                 href='#contact'
                 onClick={() => setActiveNav('#contact')}
-                className={activeNav === '#contact' ? css.nav_active : ''}>
+                className={activeNav === '#contact' ? css.nav__active : ''}>
                 {mobile ? <TbMessages /> : 'Contact'}
             </a>
         </nav>

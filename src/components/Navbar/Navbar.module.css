@@ -30,7 +30,7 @@
 }
 
 .nav__container a:hover,
-.nav__container a.nav_active {
+.nav__container a.nav__active {
     color: var(--secondary-background);
     text-decoration: underline;
     text-underline-offset: 5px;
