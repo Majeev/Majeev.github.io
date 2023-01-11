@@ -19,10 +19,6 @@ const Navbar = () => {
 
     window.addEventListener('scroll', changeNavBorder);
 
-
-    window.addEventListener('load', handleResize);
-    window.addEventListener('resize', handleResize);
-
     const handleResize = () => {
         if (window.innerWidth <= 468) {
             setMobile(true);
@@ -31,7 +27,9 @@ const Navbar = () => {
         }
     };
 
-  
+    window.addEventListener('load', handleResize);
+    window.addEventListener('resize', handleResize);
+
     return (
         <nav
             className={
