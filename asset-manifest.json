@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.e5b47a69.css",
+    "main.css": "/static/css/main.8a090801.css",
     "main.js": "/static/js/main.d662c455.js",
     "static/media/me.jpg": "/static/media/me.1b94f4a259636b87ef0d.jpg",
     "static/media/pokedex.jpg": "/static/media/pokedex.43f16c430dd376018c91.jpg",
@@ -9,11 +9,11 @@
     "static/media/layered-waves-haikei2.svg": "/static/media/layered-waves-haikei2.68165f4a531ebf499ca0.svg",
     "static/media/layered-waves-haikei-reverse.svg": "/static/media/layered-waves-haikei-reverse.0906f533ded172986128.svg",
     "index.html": "/index.html",
-    "main.e5b47a69.css.map": "/static/css/main.e5b47a69.css.map",
+    "main.8a090801.css.map": "/static/css/main.8a090801.css.map",
     "main.d662c455.js.map": "/static/js/main.d662c455.js.map"
   },
   "entrypoints": [
-    "static/css/main.e5b47a69.css",
+    "static/css/main.8a090801.css",
     "static/js/main.d662c455.js"
   ]
 }
