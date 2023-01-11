@@ -27,6 +27,7 @@ const Navbar = () => {
         }
     };
 
+    window.addEventListener('load', handleResize);
     window.addEventListener('resize', handleResize);
 
     return (
