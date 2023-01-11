@@ -6,7 +6,7 @@
 
 .contact__header {
     margin: var(--margin-24px);
-    text-align: center;
+    text-align: center; 
 }
 
 .contact__form {
