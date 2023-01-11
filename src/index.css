@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-
 * {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
@@ -117,6 +116,14 @@ section {
     margin: 16rem 0;
 }
 
+footer p {
+    color: var(--section-text-color);
+    font-size: var(--font-small);
+    padding: 5.2rem;
+    text-align: center;
+}
+
+
 textarea,
 input {
     background: #f0f0f0;
@@ -167,9 +174,3 @@ img {
     }
 }
 
-footer p {
-    color: var(--section-text-color);
-    font-size: var(--font-small);
-    padding: 2.2rem;
-    text-align: center;
-}

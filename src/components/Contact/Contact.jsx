@@ -30,7 +30,7 @@ const Contact = () => {
     };
 
     return (
-        <section id='contact' className='flex__center column'>
+        <section id='contact' className={`flex__center column ${css.abc}`}>
             <header className={css.contact__header}>
                 <h2>Let's talk!</h2>
                 <h3>Contact me</h3>
@@ -68,6 +68,9 @@ const Contact = () => {
                     <AiFillGithub />
                 </a>
             </div>
+            <footer>
+                <p>Copyright ©2022 by Jakub Majewski. All rights reserved.</p>
+            </footer>
         </section>
     );
 };
