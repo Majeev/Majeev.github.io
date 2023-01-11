@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import css from './Navbar.module.css';
 import { RiHome3Line } from 'react-icons/ri';
 import { BsGear, BsInfoCircle } from 'react-icons/bs';
@@ -19,16 +20,21 @@ const Navbar = () => {
 
     window.addEventListener('scroll', changeNavBorder);
 
-    const handleResize = () => {
-        if (window.innerWidth <= 468) {
+    useEffect(() => {
+        const handleResize = () => {
+          if (window.innerWidth <= 468) {
             setMobile(true);
-        } else {
+          } else {
             setMobile(false);
-        }
-    };
-
-    window.addEventListener('load', handleResize);
-    window.addEventListener('resize', handleResize);
+          }
+        };
+        // runs on load
+        handleResize();
+        // runs when the screen size changes
+        window.addEventListener("resize", handleResize);
+        // remove the event listener before the component gets unmounted
+        return () => window.removeEventListener("resize", handleResize);
+      }, []);
 
     return (
         <nav
