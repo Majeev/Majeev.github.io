@@ -35,6 +35,12 @@
     padding: 2rem;
 }
 
+@media (max-width: 768px) {
+    .skills__container {
+        width: 100%;
+    }
+}
+
 @media (max-width: 460px) {
     .skills__item img {
         padding: 1.1rem;
