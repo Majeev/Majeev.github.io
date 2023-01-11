@@ -1,7 +1,4 @@
 import css from './Navbar.module.css';
-import { RiHome3Line } from 'react-icons/ri';
-import { BsGear, BsInfoCircle } from 'react-icons/bs';
-import { TbBriefcase, TbMessages } from 'react-icons/tb';
 import { useState } from 'react';
 
 const Navbar = () => {
