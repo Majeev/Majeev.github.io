@@ -6,14 +6,14 @@ import { useState } from 'react';
 
 const Navbar = () => {
     const [activeNav, setActiveNav] = useState('#');
-    const [navColor, setNavColor] = useState(true);
+    const [navColor, setNavBorder] = useState(true);
     const [mobile, setMobile] = useState(false);
 
     const changeNavBorder = () => {
         if (window.scrollY >= window.innerHeight / 3) {
-            setNavColor(false);
+            setNavBorder(false);
         } else {
-            setNavColor(true);
+            setNavBorder(true);
         }
     };
 
