@@ -1,19 +1,33 @@
 import css from './Navbar.module.css';
+import { RiHome3Line } from 'react-icons/ri';
+import { BsGear, BsInfoCircle } from 'react-icons/bs';
+import { TbBriefcase, TbMessages } from 'react-icons/tb';
 import { useState } from 'react';
 
 const Navbar = () => {
     const [activeNav, setActiveNav] = useState('#');
-    const [navColor, setNavColor] = useState(false);
+    const [navColor, setNavColor] = useState(true);
+    const [mobile, setMobile] = useState(false);
 
-    const changeNavColor = () => {
-        if (window.scrollY <= window.innerHeight / 3) {
-            setNavColor(true);
-        } else {
+    const changeNavBorder = () => {
+        if (window.scrollY >= window.innerHeight / 3) {
             setNavColor(false);
+        } else {
+            setNavColor(true);
         }
     };
 
-    window.addEventListener('scroll', changeNavColor);
+    window.addEventListener('scroll', changeNavBorder);
+
+    const handleResize = () => {
+        if (window.innerWidth <= 468) {
+            setMobile(true);
+        } else {
+            setMobile(false);
+        }
+    };
+
+    window.addEventListener('resize', handleResize);
 
     return (
         <nav
@@ -26,31 +40,31 @@ const Navbar = () => {
                 href='#'
                 onClick={() => setActiveNav('#')}
                 className={activeNav === '#' ? css.nav_active : ''}>
-                Home
+                {mobile ? <RiHome3Line /> : 'Home'}
             </a>
             <a
                 href='#about'
                 onClick={() => setActiveNav('#about')}
                 className={activeNav === '#about' ? css.nav_active : ''}>
-                About me
+                {mobile ? <BsInfoCircle /> : 'About me'}
             </a>
             <a
                 href='#skills'
                 onClick={() => setActiveNav('#skills')}
                 className={activeNav === '#skills' ? css.nav_active : ''}>
-                Tech stack
+                {mobile ? <BsGear /> : 'Tech stack'}
             </a>
             <a
                 href='#projects'
                 onClick={() => setActiveNav('#projects')}
                 className={activeNav === '#projects' ? css.nav_active : ''}>
-                Projects
+                {mobile ? <TbBriefcase /> : 'Projects'}
             </a>
             <a
                 href='#contact'
                 onClick={() => setActiveNav('#contact')}
                 className={activeNav === '#contact' ? css.nav_active : ''}>
-                Contact
+                {mobile ? <TbMessages /> : 'Contact'}
             </a>
         </nav>
     );
