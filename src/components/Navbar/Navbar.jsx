@@ -9,7 +9,7 @@ const Navbar = () => {
     const [navColor, setNavColor] = useState(false);
 
     const changeNavColor = () => {
-        if (window.scrollY >= 120) {
+        if (window.scrollY <= window.innerHeight / 3) {
             setNavColor(true);
         } else {
             setNavColor(false);
@@ -29,31 +29,31 @@ const Navbar = () => {
                 href='#'
                 onClick={() => setActiveNav('#')}
                 className={activeNav === '#' ? css.nav_active : ''}>
-                <RiHome3Line />
+                Home
             </a>
             <a
                 href='#about'
                 onClick={() => setActiveNav('#about')}
                 className={activeNav === '#about' ? css.nav_active : ''}>
-                <BsInfoCircle />
+                About me
             </a>
             <a
                 href='#skills'
                 onClick={() => setActiveNav('#skills')}
                 className={activeNav === '#skills' ? css.nav_active : ''}>
-                <BsGear />
+                Tech stack
             </a>
             <a
                 href='#projects'
                 onClick={() => setActiveNav('#projects')}
                 className={activeNav === '#projects' ? css.nav_active : ''}>
-                <TbBriefcase />
+                Projects
             </a>
             <a
                 href='#contact'
                 onClick={() => setActiveNav('#contact')}
                 className={activeNav === '#contact' ? css.nav_active : ''}>
-                <TbMessages />
+                Contact
             </a>
         </nav>
     );
