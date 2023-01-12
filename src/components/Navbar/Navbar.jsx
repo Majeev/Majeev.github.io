@@ -22,19 +22,15 @@ const Navbar = () => {
 
     useEffect(() => {
         const handleResize = () => {
-          if (window.innerWidth <= 468) {
-            setMobile(true);
-          } else {
-            setMobile(false);
-          }
+            if (window.innerWidth <= 468) {
+                setMobile(true);
+            } else {
+                setMobile(false);
+            }
         };
-        // runs on load
         handleResize();
-        // runs when the screen size changes
-        window.addEventListener("resize", handleResize);
-        // remove the event listener before the component gets unmounted
-        return () => window.removeEventListener("resize", handleResize);
-      }, []);
+        window.addEventListener('resize', handleResize);
+    }, []);
 
     return (
         <nav
