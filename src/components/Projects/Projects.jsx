@@ -8,7 +8,10 @@ import { AiFillApi, AiFillGithub } from 'react-icons/ai';
 
 const Projects = () => {
     return (
-        <section id='projects' className='flex__center column'>
+        <section
+            id='projects'
+            className='flex__center column'
+            data-aos='fade-up'>
             <header className={css.projects__header}>
                 <h2>Some of my hobbyist projects</h2>
                 <h3>Experience</h3>

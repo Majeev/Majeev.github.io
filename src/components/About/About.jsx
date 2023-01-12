@@ -4,8 +4,8 @@ import me from '../../assets/me.jpg';
 const About = () => {
     return (
         <section id='about' className={`${css.about} flex__center`}>
-            <img src={me} alt='This is me on a skijet' />
-            <div className={css.about__text}>
+            <img src={me} data-aos='fade-right' alt='This is me on a skijet' />
+            <div className={css.about__text} data-aos='fade-left'>
                 <h2>Get to know</h2>
                 <h3>About me</h3>
                 <p>
