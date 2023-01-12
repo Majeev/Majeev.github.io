@@ -41,7 +41,7 @@ const Skills = () => {
     ];
 
     return (
-        <section id='skills' className='flex__center column'>
+        <section id='skills' className='flex__center column' data-aos='fade-up'>
             <header className={css.skills__header}>
                 <h2>Expertise</h2>
                 <h3 className={css.h3__large}>Technologies and tools</h3>
