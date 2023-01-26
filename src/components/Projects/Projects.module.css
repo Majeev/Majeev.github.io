@@ -27,12 +27,12 @@
     margin: var(--margin-24px);
     max-width: 600px;
     padding: 0.5rem 0;
-    transition: all 0.3s ease-in;
+    transition: all 0.3s ease-out;
 }
 
 .projects__card:hover {
     scale: 1.02;
-    box-shadow: inset 0 0 10px #7d7d7d;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 58%);
 }
 
 .projects__card > * {
