@@ -1,5 +1,5 @@
 import css from './About.module.css';
-import me from '../../assets/me.jpg';
+import { me } from '../../assets/assets';
 
 const About = () => {
     return (

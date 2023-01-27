@@ -1,0 +1,30 @@
+.projects__card {
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: var(--default-radius);
+    box-shadow: inset 0 0 10px #e2e2e2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: var(--margin-24px);
+    max-width: 600px;
+    padding: 0.5rem 0;
+    transition: all 0.3s ease-out;
+}
+
+.projects__card:hover {
+    scale: 1.02;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 58%);
+}
+
+.projects__card > * {
+    margin: 1rem 0;
+}
+
+.projects__technologies {
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-evenly;
+    margin: 1rem var(--margin-24px);
+    width: 80%;
+}
