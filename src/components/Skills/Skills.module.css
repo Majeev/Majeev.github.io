@@ -19,18 +19,18 @@
     flex-direction: column-reverse;
     margin: var(--margin-24px);
     width: 15%;
-    max-width: 350px;
+    max-width: 200px;
     text-align: center;
     border-radius: var(--default-radius);
     transition: all 0.3s ease-out;
 }
 .skills__item:hover {
     scale: 1.05;
-    box-shadow: 0 1px 6px rgb(32 33 36 / 58%);
+    box-shadow: 0 1px 6px rgb(32 33 36 / 38%);
 }
 
 .skills__item img {
-    max-height: 150px;
+    max-height: 140px;
     object-fit: fill;
     padding: 2rem;
 }
