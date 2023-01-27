@@ -53,7 +53,7 @@ const Skills = () => {
                         <div className={css.skills__item} key={item.name}>
                             <img
                                 src={item.image}
-                                alt='programming languages section'
+                                alt={item.name}
                             />
                         </div>
                     );
