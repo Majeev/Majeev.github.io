@@ -8,10 +8,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 1440px;
     width: 100%;
 }
 
 .projects__container img {
     border-radius: var(--default-radius);
-    max-width: 80%;
+    box-shadow: 0 1px 8px rgb(32 33 36 / 28%);
+    width: 80%;
 }

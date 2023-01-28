@@ -28,6 +28,27 @@ const Projects = () => {
             live: 'https://majeev.github.io/Pokedex/',
             github: 'https://github.com/Majeev/Pokedex',
         },
+        {
+            title: 'Pokedex',
+            img: pokedex,
+            stack: [<SiHtml5 />, <SiCss3 />, <SiJavascript />, <FaReact />],
+            live: 'https://majeev.github.io/Pokedex/',
+            github: 'https://github.com/Majeev/Pokedex',
+        },
+        {
+            title: 'Pokedex',
+            img: pokedex,
+            stack: [<SiHtml5 />, <SiCss3 />, <SiJavascript />, <FaReact />],
+            live: 'https://majeev.github.io/Pokedex/',
+            github: 'https://github.com/Majeev/Pokedex',
+        },
+        {
+            title: 'Pokedex',
+            img: pokedex,
+            stack: [<SiHtml5 />, <SiCss3 />, <SiJavascript />, <FaReact />],
+            live: 'https://majeev.github.io/Pokedex/',
+            github: 'https://github.com/Majeev/Pokedex',
+        },
     ];
 
     return (
