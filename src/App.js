@@ -1,12 +1,14 @@
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Navbar from './components/Navbar/Navbar';
-import Header from './components/Header/Header';
-import About from './components/About/About';
-import Skills from './components/Skills/Skills';
-import Contact from './components/Contact/Contact';
-import Projects from './components/Projects/Projects';
+import {
+    Navbar,
+    Header,
+    About,
+    Skills,
+    Projects,
+    Contact,
+} from './components/index';
 
 function App() {
     useEffect(() => {

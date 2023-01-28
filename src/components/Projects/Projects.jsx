@@ -1,8 +1,7 @@
 import css from './Projects.module.css';
+import { Project } from '.././index';
 import { todo, pokedex, portfolio } from '../../assets/assets';
 import { SiCss3, SiHtml5, SiJavascript, FaReact, AiFillGithub } from '../icons';
-
-import Project from './Project/Project';
 
 const Projects = () => {
     const gitIcon = <AiFillGithub />;
