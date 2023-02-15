@@ -20,4 +20,6 @@
     border-radius: var(--default-radius);
     box-shadow: 0 1px 8px rgb(32 33 36 / 28%);
     width: 80%;
+    aspect-ratio: 16/9;
+    object-fit: fill;
 }
