@@ -1,7 +1,14 @@
 import css from './Projects.module.css';
 import { Project } from '.././index';
 import { todo, pokedex, portfolio, football } from '../../assets/assets';
-import { SiCss3, SiHtml5, SiJavascript, FaReact, AiFillGithub, FaBootstrap } from '../icons';
+import {
+    SiCss3,
+    SiHtml5,
+    SiJavascript,
+    FaReact,
+    AiFillGithub,
+    FaBootstrap,
+} from '../icons';
 
 const Projects = () => {
     const gitIcon = <AiFillGithub />;
@@ -31,11 +38,16 @@ const Projects = () => {
         {
             title: 'Football App',
             img: football,
-            stack: [<SiHtml5 />, <SiCss3 />, <FaBootstrap />, <SiJavascript />, <FaReact />],
-            live: 'https:/github.com/Majeev/Sportradar-Coding-Academy/',
+            stack: [
+                <SiHtml5 />,
+                <SiCss3 />,
+                <FaBootstrap />,
+                <SiJavascript />,
+                <FaReact />,
+            ],
+            live: null,
             github: 'github.com/Majeev/Sportradar-Coding-Academy',
         },
-    
     ];
 
     return (
@@ -46,6 +58,7 @@ const Projects = () => {
             <header className={css.projects__header}>
                 <h2>Some of my hobbyist projects</h2>
                 <h3>Experience</h3>
+                <p>Play icon means project is live! </p>
             </header>
             <div className={css.projects__container}>
                 {projects.map((project) => (

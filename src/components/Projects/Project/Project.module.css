@@ -28,3 +28,7 @@
     margin: 1rem var(--margin-24px);
     width: 80%;
 }
+
+h4 > * {
+    margin: 0 1rem;
+}

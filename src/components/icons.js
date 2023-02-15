@@ -4,6 +4,7 @@ import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { RiHome3Line } from 'react-icons/ri';
 import { BsGear, BsInfoCircle } from 'react-icons/bs';
 import { TbBriefcase, TbMessages } from 'react-icons/tb';
+import { MdLiveTv } from 'react-icons/md';
 
 export {
     SiCss3,
@@ -18,4 +19,5 @@ export {
     BsInfoCircle,
     TbBriefcase,
     TbMessages,
+    MdLiveTv,
 };

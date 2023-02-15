@@ -2,6 +2,10 @@
     margin: var(--margin-24px);
     text-align: center;
 }
+.projects__header p {
+    margin-top: 2rem;
+    font-size: var(--font-normal)
+}
 
 .projects__container {
     align-items: center;
