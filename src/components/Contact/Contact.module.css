@@ -1,6 +1,8 @@
 .contact__container {
     background: url('../../assets/layered-waves-haikei-reverse.svg');
+    background-position: 0 100px;
     background-size: cover;
+    background-repeat: no-repeat;
     margin-bottom: 0;
 }
 
