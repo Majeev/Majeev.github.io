@@ -32,7 +32,7 @@
 }
 
 .message__submit:hover {
-    box-shadow: inset 0 0 10px #787878;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 58%);
 }
 .none {
     display: none;
