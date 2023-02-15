@@ -1,5 +1,5 @@
-import { SiCss3, SiHtml5, SiJavascript } from 'react-icons/si';
-import { FaReact, FaBootstrap } from 'react-icons/fa';
+import { SiCss3, SiHtml5, SiJavascript, SiTypescript, SiMongodb, SiTailwindcss } from 'react-icons/si';
+import { FaReact, FaBootstrap, FaNode } from 'react-icons/fa';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { RiHome3Line } from 'react-icons/ri';
 import { BsGear, BsInfoCircle } from 'react-icons/bs';
@@ -10,8 +10,12 @@ export {
     SiCss3,
     SiHtml5,
     SiJavascript,
+    SiTypescript,
+    SiMongodb,
+    SiTailwindcss,
     FaReact,
     FaBootstrap,
+    FaNode,
     AiFillGithub,
     AiFillLinkedin,
     RiHome3Line,

@@ -1,6 +1,6 @@
 import css from './Projects.module.css';
 import { Project } from '.././index';
-import { todo, pokedex, portfolio, football } from '../../assets/assets';
+import { todo, pokedex, portfolio, football, WIP } from '../../assets/assets';
 import {
     SiCss3,
     SiHtml5,
@@ -8,7 +8,11 @@ import {
     FaReact,
     AiFillGithub,
     FaBootstrap,
-    MdLiveTv
+    MdLiveTv,
+    SiTailwindcss,
+    SiMongodb,
+    SiTypescript,
+    FaNode,
 } from '../icons';
 
 const Projects = () => {
@@ -48,6 +52,19 @@ const Projects = () => {
             ],
             live: null,
             github: 'https://github.com/Majeev/Sportradar-Coding-Academy',
+        },
+        {
+            title: 'Fullstack Banking App',
+            img: WIP,
+            stack: [
+                <SiTypescript />,
+                <FaReact />,
+                <FaNode />,
+                <SiMongodb />,
+                < SiTailwindcss />,
+            ],
+            live: null,
+            github: null,
         },
     ];
 
