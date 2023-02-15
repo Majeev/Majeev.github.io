@@ -32,8 +32,8 @@ const Projects = () => {
             title: 'Football App',
             img: football,
             stack: [<SiHtml5 />, <SiCss3 />, <FaBootstrap />, <SiJavascript />, <FaReact />],
-            live: 'https://majeev.github.io/Pokedex/',
-            github: 'https://github.com/Majeev/Pokedex',
+            live: 'https:/github.com/Majeev/Sportradar-Coding-Academy/',
+            github: 'github.com/Majeev/Sportradar-Coding-Academy',
         },
     
     ];
