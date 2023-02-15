@@ -1,7 +1,7 @@
 import css from './Projects.module.css';
 import { Project } from '.././index';
-import { todo, pokedex, portfolio } from '../../assets/assets';
-import { SiCss3, SiHtml5, SiJavascript, FaReact, AiFillGithub } from '../icons';
+import { todo, pokedex, portfolio, football } from '../../assets/assets';
+import { SiCss3, SiHtml5, SiJavascript, FaReact, AiFillGithub, FaBootstrap } from '../icons';
 
 const Projects = () => {
     const gitIcon = <AiFillGithub />;
@@ -29,26 +29,13 @@ const Projects = () => {
             github: 'https://github.com/Majeev/Pokedex',
         },
         {
-            title: 'Pokedex',
-            img: pokedex,
-            stack: [<SiHtml5 />, <SiCss3 />, <SiJavascript />, <FaReact />],
+            title: 'Football App',
+            img: football,
+            stack: [<SiHtml5 />, <SiCss3 />, <FaBootstrap />, <SiJavascript />, <FaReact />],
             live: 'https://majeev.github.io/Pokedex/',
             github: 'https://github.com/Majeev/Pokedex',
         },
-        {
-            title: 'Pokedex',
-            img: pokedex,
-            stack: [<SiHtml5 />, <SiCss3 />, <SiJavascript />, <FaReact />],
-            live: 'https://majeev.github.io/Pokedex/',
-            github: 'https://github.com/Majeev/Pokedex',
-        },
-        {
-            title: 'Pokedex',
-            img: pokedex,
-            stack: [<SiHtml5 />, <SiCss3 />, <SiJavascript />, <FaReact />],
-            live: 'https://majeev.github.io/Pokedex/',
-            github: 'https://github.com/Majeev/Pokedex',
-        },
+    
     ];
 
     return (

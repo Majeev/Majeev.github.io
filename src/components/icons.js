@@ -1,5 +1,5 @@
 import { SiCss3, SiHtml5, SiJavascript } from 'react-icons/si';
-import { FaReact } from 'react-icons/fa';
+import { FaReact, FaBootstrap } from 'react-icons/fa';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { RiHome3Line } from 'react-icons/ri';
 import { BsGear, BsInfoCircle } from 'react-icons/bs';
@@ -10,6 +10,7 @@ export {
     SiHtml5,
     SiJavascript,
     FaReact,
+    FaBootstrap,
     AiFillGithub,
     AiFillLinkedin,
     RiHome3Line,
