@@ -46,7 +46,7 @@ const Projects = () => {
                 <FaReact />,
             ],
             live: null,
-            github: 'github.com/Majeev/Sportradar-Coding-Academy',
+            github: 'https://github.com/Majeev/Sportradar-Coding-Academy',
         },
     ];
 
