@@ -146,6 +146,10 @@ img {
     object-fit: cover;
 }
 
+.icon {
+    translate: 0 2px;
+}
+
 @media (max-width: 1024px) {
     header span {
         font-size: 2.7rem;

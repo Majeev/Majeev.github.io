@@ -8,6 +8,7 @@ import {
     FaReact,
     AiFillGithub,
     FaBootstrap,
+    MdLiveTv
 } from '../icons';
 
 const Projects = () => {
@@ -58,7 +59,7 @@ const Projects = () => {
             <header className={css.projects__header}>
                 <h2>Some of my hobbyist projects</h2>
                 <h3>Experience</h3>
-                <p>Play icon means project is live! </p>
+                <p><MdLiveTv className='icon'/> means you can check it live!</p>
             </header>
             <div className={css.projects__container}>
                 {projects.map((project) => (
