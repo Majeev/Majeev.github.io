@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.a2103ba8.css",
-    "main.js": "/static/js/main.01a3c059.js",
+    "main.css": "/static/css/main.22f19ecc.css",
+    "main.js": "/static/js/main.a682f2b1.js",
     "static/media/me.webp": "/static/media/me.1c97afc2514298ec5c40.webp",
     "static/media/football.webp": "/static/media/football.545f5790fee834c995d0.webp",
     "static/media/pokedex.webp": "/static/media/pokedex.37413632e42f9aa85bb7.webp",
     "static/media/WIP.webp": "/static/media/WIP.555f54c2e852c83f560e.webp",
     "static/media/me23.webp": "/static/media/me23.cdeca2f285823d2f6ad2.webp",
-    "static/media/portfolio.webp": "/static/media/portfolio.26913feec3415cd4bfca.webp",
+    "static/media/portfolio.webp": "/static/media/portfolio.49ea6464ccb491d5b510.webp",
     "static/media/todolist.webp": "/static/media/todolist.9bf306428c06ada8d997.webp",
-    "static/media/logo.webp": "/static/media/logo.038e0e9ce4a13861f3ba.webp",
+    "static/media/logo.webp": "/static/media/logo.ce63741108fd06dc50a0.webp",
     "index.html": "/index.html",
-    "main.a2103ba8.css.map": "/static/css/main.a2103ba8.css.map",
-    "main.01a3c059.js.map": "/static/js/main.01a3c059.js.map"
+    "main.22f19ecc.css.map": "/static/css/main.22f19ecc.css.map",
+    "main.a682f2b1.js.map": "/static/js/main.a682f2b1.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2103ba8.css",
-    "static/js/main.01a3c059.js"
+    "static/css/main.22f19ecc.css",
+    "static/js/main.a682f2b1.js"
   ]
 }
