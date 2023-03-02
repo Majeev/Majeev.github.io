@@ -26,9 +26,9 @@ html {
 
 :root {
     --default-radius: 10px;
-    --secondary-background: #f4f7f6;
+    --secondary-background: #ffffff;
     --input-background: #f0f0f0;
-    --font-header: 2rem;
+    --font-large: 2rem;
     --font-normal: 1.7rem;
     --font-small: 1rem;
     --margin-24px: 2.4rem;
@@ -41,8 +41,8 @@ a,
 a:hover,
 a:focus,
 a:active {
-    color: inherit;
     text-decoration: none;
+    color: inherit;
 }
 
 button {
@@ -59,7 +59,7 @@ h6 {
 }
 
 h1 {
-    font-size: 6rem;
+    font-size: 5rem;
 }
 
 h2,
@@ -126,7 +126,7 @@ footer p {
 
 textarea,
 input {
-    background: var(--input-background);
+    background: #f9fafb;
     border-radius: var(--default-radius);
     border: 1px solid #e2e2e2;
     color: var(--section-text-color);
@@ -151,9 +151,11 @@ img {
 }
 
 @media (max-width: 1024px) {
-    header span {
-        font-size: 2.7rem;
-    }
+   :root {
+    --font-large: calc(var(--font-large) * 0.75);
+    --font-normal: calc(var(--font-normal) * 0.95);
+    --font-small: calc(var(--font-small) * 0.75);
+   }
 
     h1 {
         font-size: 4rem;
@@ -170,6 +172,7 @@ img {
 }
 
 @media (max-width: 460px) {
+
     section {
         margin-top: 8rem !important;
     }
@@ -177,3 +180,5 @@ img {
         font-size: 3rem;
     }
 }
+
+

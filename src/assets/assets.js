@@ -1,8 +1,11 @@
-import todo from './todolist.jpg';
-import pokedex from './pokedex.jpg';
-import portfolio from './portfolio.jpg';
-import me from './me.jpg';
-import football from './football.jpg'
-import WIP from './WIP.jpg'
+import todo from './todolist.webp';
+import pokedex from './pokedex.webp';
+import portfolio from './portfolio.webp';
+import me from './me.webp';
+import football from './football.webp'
+import WIP from './WIP.webp'
+import logo from './logo.webp'
+import meHeader from './me23.webp'
 
-export { todo, pokedex, portfolio, me, football, WIP };
+
+export { todo, pokedex, portfolio, me, football, WIP, logo, meHeader  };
