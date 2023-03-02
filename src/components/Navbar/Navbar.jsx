@@ -1,74 +1,44 @@
-import { useEffect } from 'react';
 import css from './Navbar.module.css';
-import { RiHome3Line } from 'react-icons/ri';
-import { BsGear, BsInfoCircle } from 'react-icons/bs';
-import { TbBriefcase, TbMessages } from 'react-icons/tb';
 import { useState } from 'react';
+import { logo } from '../../assets/assets';
+import NavSections from './NavSections';
 
 const Navbar = () => {
-    const [activeNav, setActiveNav] = useState('#');
-    const [navColor, setNavBorder] = useState(true);
-    const [mobile, setMobile] = useState(false);
+    const [burger, setBurger] = useState(false);
 
-    const changeNavBorder = () => {
-        if (window.scrollY >= window.innerHeight / 3) {
-            setNavBorder(false);
-        } else {
-            setNavBorder(true);
-        }
+    const handleBurger = () => {
+        setBurger(!burger);
     };
 
-    window.addEventListener('scroll', changeNavBorder);
-
-    useEffect(() => {
-        const handleResize = () => {
-            if (window.innerWidth <= 468) {
-                setMobile(true);
-            } else {
-                setMobile(false);
-            }
-        };
-        handleResize();
-        window.addEventListener('resize', handleResize);
-    }, []);
+    const handleResize = () => {
+        window.innerWidth >= 768 && setBurger(false)
+    };
+    window.addEventListener('resize', handleResize);
 
     return (
-        <nav
-            className={
-                navColor
-                    ? css.nav__container
-                    : `${css.nav__container} ${css.nav__blur}`
-            }>
-            <a
-                href='#'
-                onClick={() => setActiveNav('#')}
-                className={activeNav === '#' ? css.nav__active : ''}>
-                {mobile ? <RiHome3Line /> : 'Home'}
-            </a>
-            <a
-                href='#about'
-                onClick={() => setActiveNav('#about')}
-                className={activeNav === '#about' ? css.nav__active : ''}>
-                {mobile ? <BsInfoCircle /> : 'About me'}
-            </a>
-            <a
-                href='#skills'
-                onClick={() => setActiveNav('#skills')}
-                className={activeNav === '#skills' ? css.nav__active : ''}>
-                {mobile ? <BsGear /> : 'Tech stack'}
-            </a>
-            <a
-                href='#projects'
-                onClick={() => setActiveNav('#projects')}
-                className={activeNav === '#projects' ? css.nav__active : ''}>
-                {mobile ? <TbBriefcase /> : 'Projects'}
-            </a>
-            <a
-                href='#contact'
-                onClick={() => setActiveNav('#contact')}
-                className={activeNav === '#contact' ? css.nav__active : ''}>
-                {mobile ? <TbMessages /> : 'Contact'}
-            </a>
+        <nav className={css.nav}>
+            <div className={css.nav__container}>
+                <div className={css.nav__name}>
+                    <img src={logo} alt='my logo'></img>
+                </div>
+                <div className={css.nav__links_container}>
+                   <NavSections />
+                </div>
+                <div className={css.nav__burger_container}>
+                    <button
+                        className={css.nav__burger_menu}
+                        onClick={handleBurger}>
+                        <div className={css.burger_bar}></div>
+                        <div className={css.burger_bar}></div>
+                        <div className={css.burger_bar}></div>
+                    </button>
+                </div>
+            </div>
+            {burger && (
+                <div className={css.dupa_con}>
+                   <NavSections onClick={handleBurger}/>
+                </div>
+            )}
         </nav>
     );
 };

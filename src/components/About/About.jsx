@@ -9,12 +9,11 @@ const About = () => {
                 <h2>Get to know</h2>
                 <h3>About me</h3>
                 <p>
-                    My name is Jakub Majewski and I am 21 years old Computer
-                    Science student at University of Łódź. Since childhood I've
-                    been interested in technology and finding out how things
-                    work. My programming journey started with Python and bash
-                    scripting, but then I've felt in love with Frontend
-                    development.
+                    My name is Jakub Majewski and I am 22 years old self-taught
+                    Javascript Developer. Since childhood I've been interested
+                    in technology and finding out how things work. My
+                    programming journey started with Python and bash scripting,
+                    but then I've felt in love with Frontend development.
                 </p>
                 <p>
                     I am type of person who demonstrates an insatiable desire

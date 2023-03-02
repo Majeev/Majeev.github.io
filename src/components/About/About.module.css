@@ -5,6 +5,7 @@
 
 .about__text {
     color: var(--section-text-color);
+    
     margin-bottom: 3.5rem;
     padding: 0 1rem;
     width: 60%;
@@ -19,21 +20,10 @@
     position: relative;
 }
 
-.about__text h3::after {
-    background-color: var(--main-background);
-    bottom: 0;
-    content: '';
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    transform: translateX(-50%);
-    width: 100%;
-}
-
 .about img {
     border-radius: 15px;
     max-height: 640px;
-    width: 40%;
+    width: 500px;
 }
 
 @media (max-width: 1024px) {
@@ -60,9 +50,6 @@
 }
 
 @media (max-width: 461px) {
-    .about__text {
-        font-size: var(--font-small);
-    }
 
     .about__text p {
         margin: 2.5rem 0;
