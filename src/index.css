@@ -151,11 +151,11 @@ img {
 }
 
 @media (max-width: 1024px) {
-   :root {
+   /* :root {
     --font-large: calc(var(--font-large) * 0.75);
     --font-normal: calc(var(--font-normal) * 0.95);
     --font-small: calc(var(--font-small) * 0.75);
-   }
+   } */
 
     h1 {
         font-size: 4rem;
