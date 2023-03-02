@@ -35,7 +35,7 @@ const Navbar = () => {
                 </div>
             </div>
             {burger && (
-                <div className={css.dupa_con}>
+                <div className={css.nav__burger_content}>
                    <NavSections onClick={handleBurger}/>
                 </div>
             )}

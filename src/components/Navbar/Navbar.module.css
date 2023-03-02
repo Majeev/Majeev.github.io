@@ -69,6 +69,16 @@ a.nav__active {
     background-color: #2f80de;
 }
 
+.nav__burger_content a {
+    display: block;
+    font-size: var(--font-normal);
+    padding: 5px 10px;
+    
+}
+.nav__burger_content {
+    background-color:#f9f9f9 ;
+}
+
 
 
 @media (max-width: 768px) {
