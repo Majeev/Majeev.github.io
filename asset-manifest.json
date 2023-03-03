@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3034b8c6.css",
-    "main.js": "/static/js/main.abfa3ad6.js",
+    "main.js": "/static/js/main.c0308d23.js",
     "static/media/me.webp": "/static/media/me.1c97afc2514298ec5c40.webp",
     "static/media/football.webp": "/static/media/football.f94a8429f5a60cfcfab8.webp",
     "static/media/pokedex.webp": "/static/media/pokedex.70152af861d6f2c6b721.webp",
@@ -12,10 +12,10 @@
     "static/media/logo.webp": "/static/media/logo.ce63741108fd06dc50a0.webp",
     "index.html": "/index.html",
     "main.3034b8c6.css.map": "/static/css/main.3034b8c6.css.map",
-    "main.abfa3ad6.js.map": "/static/js/main.abfa3ad6.js.map"
+    "main.c0308d23.js.map": "/static/js/main.c0308d23.js.map"
   },
   "entrypoints": [
     "static/css/main.3034b8c6.css",
-    "static/js/main.abfa3ad6.js"
+    "static/js/main.c0308d23.js"
   ]
 }
