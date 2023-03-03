@@ -82,20 +82,9 @@ h3 {
 
 h4 {
     position: relative;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
-h3::after,
-h4:after {
-    background-color: var(--main-background);
-    bottom: 0;
-    content: '';
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    transform: translateX(-50%);
-    width: 100%;
-}
 
 p {
     font-size: var(--font-normal);
