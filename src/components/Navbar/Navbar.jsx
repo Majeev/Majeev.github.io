@@ -11,7 +11,7 @@ const Navbar = () => {
     };
 
     const handleResize = () => {
-        window.innerWidth >= 768 && setBurger(false)
+        window.innerWidth >= 768 && setBurger(false);
     };
     window.addEventListener('resize', handleResize);
 
@@ -22,11 +22,15 @@ const Navbar = () => {
                     <img src={logo} alt='my logo'></img>
                 </div>
                 <div className={css.nav__links_container}>
-                   <NavSections />
+                    <NavSections />
                 </div>
                 <div className={css.nav__burger_container}>
                     <button
-                        className={css.nav__burger_menu}
+                        className={
+                            !burger
+                                ? css.nav__burger_menu
+                                : css.nav__burger_menu_clicked
+                        }
                         onClick={handleBurger}>
                         <div className={css.burger_bar}></div>
                         <div className={css.burger_bar}></div>
@@ -36,7 +40,7 @@ const Navbar = () => {
             </div>
             {burger && (
                 <div className={css.nav__burger_content}>
-                   <NavSections onClick={handleBurger}/>
+                    <NavSections onClick={handleBurger} />
                 </div>
             )}
         </nav>

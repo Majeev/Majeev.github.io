@@ -46,19 +46,25 @@ a.nav__active {
 }
 
 .nav__burger_container {
-    position: relative;
     width: 50%;
     display: none;
     justify-content: flex-end;
 }
 
-.nav__burger_menu {
+.nav__burger_menu,
+.nav__burger_menu_clicked {
     align-self: end;
     border: none;
     background-color: transparent;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    transition: var(--transition);
+}
+.nav__burger_menu_clicked  {
+    background-color: #f9f9f9;
+    border: 2px dashed #f1f1f1;
+    padding: 0.75rem;
 }
 
 .burger_bar {
@@ -67,19 +73,17 @@ a.nav__active {
     width: 3rem;
     height: 0.4rem;
     background-color: #2f80de;
+    
 }
 
 .nav__burger_content a {
     display: block;
     font-size: var(--font-normal);
     padding: 5px 10px;
-    
 }
 .nav__burger_content {
-    background-color:#f9f9f9 ;
+    background-color: #f9f9f9;
 }
-
-
 
 @media (max-width: 768px) {
     .nav__container {
