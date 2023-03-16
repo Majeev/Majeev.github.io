@@ -1,21 +1,19 @@
-import css from './Projects.module.css';
 import { Project } from '.././index';
-import { projects } from './Projects.data'
+import { projects } from './Projects.data';
 
 const Projects = () => {
-
     return (
         <section
             id='projects'
-            className='flex__center column'
+            className='flex flex-col justify-center align-center'
             data-aos='fade-up'>
-            <header className={css.projects__header}>
+            <header className='text-center'>
                 <h2>Some of my hobbyist projects</h2>
                 <h3>Experience</h3>
             </header>
             <div>
-                {projects.map((project) => (
-                    <Project project={project} />
+                {projects.map((project, index) => (
+                    <Project project={project} key={index} />
                 ))}
             </div>
         </section>

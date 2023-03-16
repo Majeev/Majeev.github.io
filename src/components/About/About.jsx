@@ -3,9 +3,16 @@ import { me } from '../../assets/assets';
 
 const About = () => {
     return (
-        <section id='about' className={`${css.about} flex__center`}>
-            <img src={me} data-aos='fade-right' alt='This is me on a skijet' />
-            <div className={css.about__text} data-aos='fade-left'>
+        <section id='about' className={`${css.about} flex justify-center`}>
+            <img
+                className='m-10'
+                src={me}
+                data-aos='fade-right'
+                alt='This is me on a skijet'
+            />
+            <div
+                className=' m-10 px-8 py-4 w-4/5 lg:px-4 lg:w-3/5'
+                data-aos='fade-left'>
                 <h2>Get to know</h2>
                 <h3>About me</h3>
                 <p>

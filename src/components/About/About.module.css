@@ -1,27 +1,9 @@
-.about__text,
-.about img {
-    margin: var(--margin-24px);
-}
-
-.about__text {
-    color: var(--section-text-color);
-    
-    margin-bottom: 3.5rem;
-    padding: 0 1rem;
-    width: 60%;
-}
-
-.about__text p {
+.about p {
     margin: 3.5rem 0;
 }
 
-.about__text h3 {
-    display: inline;
-    position: relative;
-}
-
 .about img {
-    border-radius: 15px;
+    border-radius: var(--image-radius);
     max-height: 640px;
     width: 500px;
 }
@@ -31,27 +13,17 @@
         align-items: center;
         flex-direction: column-reverse;
     }
-
     .about h2,
     .about h3 {
-        display: block;
         text-align: center;
     }
-
-    .about__text,
     .about img {
-        padding: 0 2rem;
         width: 80%;
-    }
-
-    .about img {
-        padding: 0;
     }
 }
 
 @media (max-width: 461px) {
-
-    .about__text p {
+    .about p {
         margin: 2.5rem 0;
     }
 }

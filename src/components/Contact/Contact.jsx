@@ -4,13 +4,13 @@ import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
-    const [confirm, setConfirm] = useState(false);
+    const [isSent, setIsSent] = useState(false);
     const form = useRef();
 
     const sendEmail = (e) => {
         e.preventDefault();
         e.target.reset();
-        setConfirm(true);
+        setIsSent(true);
 
         emailjs
             .sendForm(
@@ -32,13 +32,16 @@ const Contact = () => {
     return (
         <section
             id='contact'
-            className={`flex__center column ${css.contact__container}`}>
-            <header className={css.contact__header}>
+            className={`flex flex-col justify-center items-center mb-0`}>
+            <header className='text-center m-10'>
                 <h2>Let's talk!</h2>
                 <h3>Contact me</h3>
             </header>
             <p>Leave a message here!</p>
-            <form ref={form} onSubmit={sendEmail} className={css.contact__form}>
+            <form
+                ref={form}
+                onSubmit={sendEmail}
+                className='flex flex-col items-center w-full p-8 lg:w-1/2'>
                 <input
                     required
                     type='text'
@@ -52,14 +55,12 @@ const Contact = () => {
                     placeholder='Your e-mail'
                 />
                 <textarea required name='message' placeholder='Message' />
-                <button className={confirm ? css.none : css.message__submit}>
-                    Send Message
-                </button>
-                <button className={confirm ? css.message__submit : css.none}>
-                    Message Sent!
+                <button
+                    className={`${css.message__submit} w-full mb-10 p-6 lg:w-4/5`}>
+                    {isSent ? 'Message Sent!' : 'Send Message!'}
                 </button>
             </form>
-            <div className={css.contact__alternatives}>
+            <div className={`${css.contact__alternatives} text-center`}>
                 <p>Or find me on:</p>
                 <a
                     href='https://www.linkedin.com/in/jakub-majewski-528553203/'

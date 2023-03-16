@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 * {
@@ -11,9 +14,27 @@
     text-decoration: none;
 }
 
+:root {
+    --background-white: #ffffff;
+    --box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    --color-blue: #2783ff;
+    --default-radius: 10px;
+    --font-large: 2rem;
+    --font-normal: 1.5rem;
+    --font-small: 1rem;
+    --font-text: 1.7rem;
+    --image-radius: 20px;
+    --input-backgroud: #f9fafb;
+    --input-border: 1px solid #e2e2e2;
+    --main-color: #232325;
+    --section-text-color: #555555;
+    --transition: all 0.5s;
+}
+
+/* HTML */
+
 body {
-    background-color: var(--secondary-background);
-    display: block;
+    background-color: var(--background-white);
 }
 
 html {
@@ -24,25 +45,20 @@ html {
     display: none;
 }
 
-:root {
-    --default-radius: 10px;
-    --secondary-background: #ffffff;
-    --input-background: #f0f0f0;
-    --font-large: 2rem;
-    --font-normal: 1.7rem;
-    --font-small: 1rem;
-    --margin-24px: 2.4rem;
-    --main-color: #232325;
-    --section-text-color: #555555;
-    --transition: all 0.5s;
-}
-
 a,
 a:hover,
 a:focus,
 a:active {
-    text-decoration: none;
     color: inherit;
+    display: block;
+    font-size: var(--font-normal);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--color-blue);
 }
 
 button {
@@ -59,6 +75,7 @@ h6 {
 }
 
 h1 {
+    color: var(--color-blue);
     font-size: 5rem;
 }
 
@@ -69,36 +86,21 @@ h4 {
 }
 
 h3,
+h4 {
+    font-size: 3rem;
+}
+
+h3,
 header span {
     color: var(--main-color);
-    font-size: 3rem;
 }
 
 h3 {
-    display: inline;
     padding-bottom: 0.3rem;
-    position: relative;
 }
-
-h4 {
-    position: relative;
-    font-size: 3rem;
-}
-
 
 p {
-    font-size: var(--font-normal);
-}
-
-.flex__center {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.column {
-    align-items: center;
-    flex-direction: column;
+    font-size: var(--font-text);
 }
 
 section {
@@ -113,15 +115,15 @@ footer p {
     text-align: center;
 }
 
-textarea,
-input {
-    background: #f9fafb;
+form > * {
+    background: var(--input-backgroud);
     border-radius: var(--default-radius);
-    border: 1px solid #e2e2e2;
+    border: var(--input-border);
     color: var(--section-text-color);
     font-size: var(--font-normal);
     margin-bottom: 1rem;
     padding: 1rem;
+    transition: var(--transition);
     width: 80%;
 }
 
@@ -135,25 +137,13 @@ img {
     object-fit: cover;
 }
 
-.icon {
-    translate: 0 2px;
-}
-
 @media (max-width: 1024px) {
-   /* :root {
-    --font-large: calc(var(--font-large) * 0.75);
-    --font-normal: calc(var(--font-normal) * 0.95);
-    --font-small: calc(var(--font-small) * 0.75);
-   } */
-
     h1 {
         font-size: 4rem;
     }
-
     section {
         margin-top: 10rem;
     }
-
     textarea,
     input {
         width: 100%;
@@ -161,7 +151,6 @@ img {
 }
 
 @media (max-width: 460px) {
-
     section {
         margin-top: 8rem !important;
     }
@@ -169,5 +158,3 @@ img {
         font-size: 3rem;
     }
 }
-
-

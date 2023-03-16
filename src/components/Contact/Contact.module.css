@@ -1,59 +1,21 @@
-.contact__container {
-    margin-bottom: 0;
-}
-
-.contact__header {
-    margin: var(--margin-24px);
-    text-align: center; 
-}
-
-.contact__form {
-    align-items: center;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    width: 50%;
-}
-
-.message__submit {
-    border: none;
-    background: #f9fafb;
-    border-radius: var(--default-radius);
-    border: 1px solid #e2e2e2;
-    color: var(--secondary-color);
-    font-size: var(--font-normal);
-    margin-bottom: var(--margin-24px);
-    padding: 1.5rem;
-    transition: var(--transition);
-    width: 80%;
-}
-
 .message__submit:hover {
-    box-shadow: 0 1px 6px rgb(32 33 36 / 58%);
-}
-.none {
-    display: none;
+    box-shadow: var(--box-shadow);
 }
 
-.contact__alternatives {
+.contact__alternatives a {
     color: var(--main-color);
+    display: inline-block;
     font-size: 3rem;
+    padding: 0;
     text-align: center;
-}
-
-.contact__alternatives a > * {
     transition: var(--transition);
 }
 
-.contact__alternatives a > :hover{
-  scale: 1.2;
-  rotate: 360deg
+.contact__alternatives a:hover {
+    rotate: 360deg;
+    scale: 1.2;
 }
 
-@media (max-width: 1024px) {
-    .contact__form,
-    .message__submit {
-        width: 100%;
-    }
+.contact__alternatives a:first-of-type:hover {
+    color: #0077b5;
 }

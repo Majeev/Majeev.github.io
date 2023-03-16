@@ -1,71 +1,25 @@
 import css from './Skills.module.css';
+import { skills } from './Skills.data';
 
 const Skills = () => {
-    const gear = [
-        {
-            name: 'HTML',
-            image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg',
-        },
-        {
-            name: 'CSS',
-            image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg',
-        },
-        {
-            name: 'Javascript',
-            image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
-        },
-        {
-            name: 'Typescript',
-            image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
-        },
-        {
-            name: 'React',
-            image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg',
-        },
-        {
-            name: 'Redux',
-            image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg',
-        },
-        {
-            name: 'Bootstrap',
-            image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain-wordmark.svg',
-        },
-        {
-            name: 'Tailwind',
-            image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg',
-        },
-        {
-            name: 'Git',
-            image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg',
-        },
-        {
-            name: 'Github',
-            image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg',
-        },
-        {
-            name: 'Linux',
-            image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg',
-        },
-        {
-            name: 'Photoshop',
-            image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg',
-        },
-        
-
-    ];
-
     return (
-        <section id='skills' className='flex__center column' data-aos='fade-up'>
-            <header className={css.skills__header}>
+        <section
+            id='skills'
+            className='flex flex-col justify-center items-center'
+            data-aos='fade-up'>
+            <header className='text-center mb-14 mt-10'>
                 <h2>Expertise</h2>
-                <h3 className={css.h3__large}>Technologies and tools</h3>
-                <h3 className={css.h3__mobile}>Technologies</h3>
+                <h3 className='hidden sm:inline'>Technologies and tools</h3>
+                <h3 className='inline sm:hidden'>Technologies</h3>
             </header>
-            <div className={css.skills__container}>
-                {gear.map((item) => {
+            <div className='flex flex-wrap justify-center w-full md:w-3/4'>
+                {skills.map((item) => {
                     return (
-                        <div className={css.skills__item} key={item.name}>
+                        <div
+                            className={`${css.skills__item} flex flex-col-reverse w-1/4 max-w-xs m-10 text-center `}
+                            key={item.name}>
                             <img
+                                className='max-h-56 object-fill p-6 sm:p-8'
                                 src={item.image}
                                 alt={item.name}
                             />

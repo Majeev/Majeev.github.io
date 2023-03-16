@@ -2,8 +2,6 @@ import { useState } from 'react';
 import css from './Header.module.css';
 import { meHeader } from '../../assets/assets';
 
-
-
 const Header = () => {
     const [animation, setAnimation] = useState(true);
 
@@ -37,21 +35,23 @@ const Header = () => {
 
     return (
         <header>
-            <div className={css.header__container}>
-                <div className={css.header__text}>
-                    <h1>{slogans[slogan]}</h1>
+            <div className='items-center relative lg:flex'>
+                <div className='w-full text-center lg:w-1/2'>
+                    <h1 className='px-4 md:px-36'>{slogans[slogan]}</h1>
                 </div>
-                <div className={css.header__photo}>
-                    <img src={meHeader} />
+                <div className='w-full lg:w-1/2'>
+                    <img
+                        className={`${css.header__photo} relative z-10 p-4 my-8 mx-auto w-4/5 max-w-3xl`}
+                        src={meHeader}
+                        alt='This is me'
+                    />
                 </div>
             </div>
 
             <span
-                className={
-                    animation
-                        ? css.header__scroll
-                        : `${css.header__scroll} ${css.header__noAnim}`
-                }>
+                className={`${css.header__scroll} ${
+                    !animation && css.header__noAnim
+                }`}>
                 SCROLL DOWN!
             </span>
         </header>

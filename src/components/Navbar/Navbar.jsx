@@ -16,21 +16,23 @@ const Navbar = () => {
     window.addEventListener('resize', handleResize);
 
     return (
-        <nav className={css.nav}>
-            <div className={css.nav__container}>
-                <div className={css.nav__logo}>
+        <nav className='mb-8'>
+            <div
+                className={`${css.nav__container} border-b flex items-center px-8 py-4 md:px-24 md:py-0 `}>
+                <div className='w-1/2'>
                     <img src={logo} alt='my logo'></img>
                 </div>
-                <div className={css.nav__links_container}>
+                <div
+                    className={`${css.nav__links_container} hidden items-center w-1/2 justify-end text-center whitespace-nowrap md:flex`}>
                     <NavSections />
                 </div>
-                <div className={css.nav__burger_container}>
+                <div
+                    className={`${css.nav__burger_container} w-1/2 flex justify-end md:hidden`}>
                     <button
-                        className={
-                            !burger
-                                ? css.nav__burger_menu
-                                : css.nav__burger_menu_clicked
-                        }
+                        className={`flex-col transition-all duration-500 ${
+                            burger &&
+                            'bg-zinc-100 p-3 border-2 border-dashed border-slate'
+                        }`}
                         onClick={handleBurger}>
                         <div className={css.burger_bar}></div>
                         <div className={css.burger_bar}></div>
@@ -39,7 +41,7 @@ const Navbar = () => {
                 </div>
             </div>
             {burger && (
-                <div className={css.nav__burger_content}>
+                <div className={`${css.nav__burger_content} bg-zinc-100`}>
                     <NavSections onClick={handleBurger} />
                 </div>
             )}

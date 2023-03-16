@@ -17,7 +17,13 @@ export const projects = [
         img: portfolio,
         desc: `A portfolio page is a showcase of my current work, accomplishments, and skills.
          It serves as a visual representation of my abilities and achievements, providing potential clients, employers, or collaborators with an overview of my expertise and experience.`,
-        stack: [<SiHtml5 />, <SiCss3 />, <SiJavascript />, <FaReact />],
+        stack: [
+            <SiHtml5 />,
+            <SiCss3 />,
+            <SiTailwindcss />,
+            <SiJavascript />,
+            <FaReact />,
+        ],
         live: '#',
         github: 'https://github.com/Majeev/Majeev.github.io',
     },
