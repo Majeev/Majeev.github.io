@@ -20,7 +20,7 @@ const Navbar = () => {
             <div
                 className={`${css.nav__container} border-b flex items-center px-8 py-4 md:px-24 md:py-0 `}>
                 <div className='w-1/2'>
-                    <img src={logo} alt='my logo'></img>
+                    <img src={logo} alt='my logo' className='h-16 md:h-24'></img>
                 </div>
                 <div
                     className={`${css.nav__links_container} hidden items-center w-1/2 justify-end text-center whitespace-nowrap md:flex`}>
