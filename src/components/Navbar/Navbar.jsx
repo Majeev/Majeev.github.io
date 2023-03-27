@@ -17,6 +17,7 @@ const Navbar = () => {
 
     return (
         <nav className='mb-8'>
+            <a className='skip-link' href='#about'>Skip to content</a>
             <div
                 className={`${css.nav__container} border-b flex items-center px-8 py-4 md:px-24 md:py-0 `}>
                 <div className='w-1/2'>

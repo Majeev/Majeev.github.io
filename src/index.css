@@ -61,6 +61,10 @@ a:hover {
     color: var(--color-blue);
 }
 
+a:focus {
+    outline: 1px solid var(--color-blue);
+}
+
 button {
     border-radius: var(--default-radius);
     cursor: pointer;
@@ -135,6 +139,21 @@ textarea {
 img {
     display: block;
     object-fit: cover;
+}
+
+.skip-link {
+    position: fixed;
+    top: 5px;
+    text-align: center;
+    left: 50%;
+    translate: -50% -200%;
+    background-color: var(--main-color);
+    padding: 1rem;
+}
+
+.skip-link:focus {
+    transform: translateY(200%);
+    color: var(--background-white);
 }
 
 @media (max-width: 1024px) {
