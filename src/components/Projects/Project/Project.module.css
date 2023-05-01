@@ -1,6 +1,10 @@
 .project__container {
     border-radius: var(--default-radius);
     box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+.project__container:hover {
+    scale: 1.03
 }
 .project__container a {
     padding: 0;
