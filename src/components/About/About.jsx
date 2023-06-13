@@ -8,7 +8,7 @@ const About = () => {
                 className='m-10'
                 src={me}
                 data-aos='fade-right'
-                alt='This is me on a skijet'
+                alt='This is me'
             />
             <div
                 className=' m-10 px-8 py-4 w-4/5 lg:px-4 lg:w-3/5'
@@ -16,17 +16,21 @@ const About = () => {
                 <h2>Get to know</h2>
                 <h3>About me</h3>
                 <p>
-                    My name is Jakub Majewski and I am 22 years old self-taught
-                    Javascript Developer. Since childhood I've been interested
-                    in technology and finding out how things work. My
-                    programming journey started with Python and bash scripting,
-                    but then I've felt in love with Frontend development.
+                    Hi! My name is Jakub Majewski, I am 22 years old self-taught
+                    <strong> Javascript Developer</strong> and future student of
+                    <strong> Łódź University of Technology</strong> Since
+                    childhood I've been interested in technology and finding out
+                    how things work. My programming journey started with Python
+                    and bash scripting, but then I've felt in love with
+                    <strong> Frontend development</strong>.
                 </p>
                 <p>
-                    I am type of person who demonstrates an insatiable desire
-                    for knowledge. The more I know, the more I want to learn.
-                    Right now, I am focusing on my Frontend skills. In the near
-                    future I would like to develop towards Fullstack developer.
+                    I am type of person who demonstrates an insatiable
+                    <strong> desire for knowledge</strong>. The more I know, the
+                    more I want to learn. Right now, I am focusing on my
+                    Frontend skills. In the near future I would like to develop
+                    towards <strong> Fullstack developer</strong> with
+                    <strong> Blockchain</strong>.
                 </p>
                 <p>
                     Coding makes me feel very absorbed. Working on my projects
