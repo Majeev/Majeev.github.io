@@ -64,10 +64,10 @@ const Contact = () => {
                 <p>Or find me on:</p>
                 <a
                     href='https://www.linkedin.com/in/jakub-majewski-528553203/'
-                    target='_blank'>
+                    target='_blank' rel='noreferrer' aria-label="Linkedin link">
                     <AiFillLinkedin />
                 </a>
-                <a href='https://github.com/Majeev' target='_blank'>
+                <a href='https://github.com/Majeev' target='_blank' rel='noreferrer' aria-label="Github link">
                     <AiFillGithub />
                 </a>
             </div>
