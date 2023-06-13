@@ -18,7 +18,7 @@ const About = () => {
                 <p>
                     Hi! My name is Jakub Majewski, I am 22 years old self-taught
                     <strong> Javascript Developer</strong> and future student of
-                    <strong> Łódź University of Technology</strong> Since
+                    <strong> Łódź University of Technology</strong>. Since
                     childhood I've been interested in technology and finding out
                     how things work. My programming journey started with Python
                     and bash scripting, but then I've felt in love with
