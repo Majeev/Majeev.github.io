@@ -29,7 +29,7 @@ const Navbar = () => {
                 </div>
                 <div
                     className={`${css.nav__burger_container} w-1/2 flex justify-end md:hidden`}>
-                    <button
+                    <button aria-label="burger menu open"
                         className={`flex-col transition-all duration-500 ${
                             burger &&
                             'bg-zinc-100 p-3 border-2 border-dashed border-slate'
