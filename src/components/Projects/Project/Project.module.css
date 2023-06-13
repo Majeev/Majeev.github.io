@@ -11,7 +11,7 @@
 }
 
 .project__container button {
-    background-color: #2f80de;
+    background-color: var(--color-blue);
     border: none;
     color: var(--background-white);
     margin: 0 15px;
