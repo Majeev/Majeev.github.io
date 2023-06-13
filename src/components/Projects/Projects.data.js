@@ -13,21 +13,6 @@ import {
 
 export const projects = [
     {
-        title: 'Portfolio',
-        img: portfolio,
-        desc: `A portfolio page is a showcase of my current work, accomplishments, and skills.
-         It serves as a visual representation of my abilities and achievements, providing potential clients, employers, or collaborators with an overview of my expertise and experience.`,
-        stack: [
-            <SiHtml5 />,
-            <SiCss3 />,
-            <SiTailwindcss />,
-            <SiJavascript />,
-            <FaReact />,
-        ],
-        live: '#',
-        github: 'https://github.com/Majeev/Majeev.github.io',
-    },
-    {
         title: 'Football App',
         img: football,
         desc: `App for Ekstraklasa League using Sportradar API.
@@ -42,6 +27,21 @@ export const projects = [
         ],
         live: null,
         github: 'https://github.com/Majeev/Sportradar-Coding-Academy',
+    },
+    {
+        title: 'Portfolio',
+        img: portfolio,
+        desc: `A portfolio page is a showcase of my current work, accomplishments, and skills.
+         It serves as a visual representation of my abilities and achievements, providing potential clients, employers, or collaborators with an overview of my expertise and experience.`,
+        stack: [
+            <SiHtml5 />,
+            <SiCss3 />,
+            <SiTailwindcss />,
+            <SiJavascript />,
+            <FaReact />,
+        ],
+        live: '#',
+        github: 'https://github.com/Majeev/Majeev.github.io',
     },
     {
         title: 'Pokedex',
@@ -63,17 +63,17 @@ export const projects = [
         live: 'https://majeev.github.io/React-To-Do-List/',
         github: 'https://github.com/Majeev/React-To-Do-List',
     },
-    {
-        title: 'Fullstack Banking App',
-        img: WIP,
-        stack: [
-            <SiTypescript />,
-            <FaReact />,
-            <FaNode />,
-            <SiMongodb />,
-            <SiTailwindcss />,
-        ],
-        live: null,
-        github: null,
-    },
+    // {
+    //     title: 'Fullstack Banking App',
+    //     img: WIP,
+    //     stack: [
+    //         <SiTypescript />,
+    //         <FaReact />,
+    //         <FaNode />,
+    //         <SiMongodb />,
+    //         <SiTailwindcss />,
+    //     ],
+    //     live: null,
+    //     github: null,
+    // },
 ];
