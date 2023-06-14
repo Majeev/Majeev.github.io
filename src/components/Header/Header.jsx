@@ -41,6 +41,7 @@ const Header = () => {
                 </div>
                 <div className='w-full lg:w-1/2'>
                     <img
+                        fetchpriority='high'
                         className={`${css.header__photo} relative z-10 p-4 my-8 mx-auto w-4/5 max-w-3xl`}
                         src={meHeader}
                         alt='This is me'
