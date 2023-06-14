@@ -5,7 +5,7 @@
 .about img {
     border-radius: var(--image-radius);
     max-height: 640px;
-    width: 500px;
+    max-width: 500px;
 }
 
 @media (max-width: 1024px) {
@@ -19,6 +19,7 @@
     }
     .about img {
         width: 80%;
+        
     }
 }
 
