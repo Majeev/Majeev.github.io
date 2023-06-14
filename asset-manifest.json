@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.ca88b3e7.css",
-    "main.js": "/static/js/main.c6cd74ba.js",
-    "static/media/football.webp": "/static/media/football.f94a8429f5a60cfcfab8.webp",
-    "static/media/pokedex.webp": "/static/media/pokedex.70152af861d6f2c6b721.webp",
-    "static/media/portfolio.webp": "/static/media/portfolio.af33f5637c6940de5599.webp",
+    "main.css": "/static/css/main.f624fa01.css",
+    "main.js": "/static/js/main.b59abda3.js",
     "static/media/me.webp": "/static/media/me.b6dbb8da0bb7aa339d92.webp",
     "static/media/WIP.webp": "/static/media/WIP.555f54c2e852c83f560e.webp",
-    "static/media/todolist.webp": "/static/media/todolist.5577adbd981fe666ad56.webp",
-    "static/media/me23.webp": "/static/media/me23.cdeca2f285823d2f6ad2.webp",
+    "static/media/me23.webp": "/static/media/me23.b51c32b49f15b27e678d.webp",
+    "static/media/pokedex.webp": "/static/media/pokedex.3ed7e037e19fc99c5798.webp",
+    "static/media/football.webp": "/static/media/football.b98759f8c4722afb41bc.webp",
+    "static/media/portfolio.webp": "/static/media/portfolio.853a5ab35b092269fb90.webp",
+    "static/media/todolist.webp": "/static/media/todolist.ced8fa3df00b765e0eef.webp",
     "static/media/logo.webp": "/static/media/logo.51ba405cfd7bff0c16c6.webp",
     "index.html": "/index.html",
-    "main.ca88b3e7.css.map": "/static/css/main.ca88b3e7.css.map",
-    "main.c6cd74ba.js.map": "/static/js/main.c6cd74ba.js.map"
+    "main.f624fa01.css.map": "/static/css/main.f624fa01.css.map",
+    "main.b59abda3.js.map": "/static/js/main.b59abda3.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca88b3e7.css",
-    "static/js/main.c6cd74ba.js"
+    "static/css/main.f624fa01.css",
+    "static/js/main.b59abda3.js"
   ]
 }
